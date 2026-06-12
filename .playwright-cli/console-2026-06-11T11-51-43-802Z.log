@@ -1,0 +1,31 @@
+[    2161ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[    4197ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[    5666ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/portfolio/:0
+[    5666ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/services/:0
+[    5667ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/case-studies/:0
+[    5667ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/blog/:0
+[    5667ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/demo-request/:0
+[    5697ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5719ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/product-rendering-price-list/:0
+[    6922ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    6923ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    6923ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    6923ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    6924ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    6924ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    6924ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   31730ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[   33075ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33238ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33238ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33239ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33239ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33240ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33240ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33240ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   33273ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/portfolio/:0
+[   33274ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/services/:0
+[   33274ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/case-studies/:0
+[   33274ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/blog/:0
+[   33274ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/product-rendering-price-list/:0
+[   33274ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/demo-request/:0

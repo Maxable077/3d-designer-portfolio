@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Max" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Work" [ref=e6] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e7] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /contact
+        - link "Playground" [ref=e10] [cursor=pointer]:
+          - /url: /playground
+          - generic [ref=e11]:
+            - img [ref=e12]
+            - text: Playground
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e20]:
+        - heading "Product visuals, 3D renders & technical presentations." [level=1] [ref=e21]
+        - paragraph [ref=e22]: I create high-quality product renders, animations and visual concepts using Blender, Fusion 360 and Adobe tools.
+        - generic [ref=e23]:
+          - link "View work" [ref=e24] [cursor=pointer]:
+            - /url: /work
+          - link "Contact" [ref=e25] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Featured work" [level=2] [ref=e28]
+          - link "All projects" [ref=e29] [cursor=pointer]:
+            - /url: /work
+            - text: All projects
+            - img [ref=e30]
+        - generic [ref=e32]:
+          - link "Aurora Espresso Aurora Espresso 2026 A high-end minimalist espresso machine concept featuring brushed titanium, matte steel, and ribbed walnut wood. Product Visualization" [ref=e34] [cursor=pointer]:
+            - /url: /work/aurora-espresso
+            - generic [ref=e35]:
+              - img "Aurora Espresso" [ref=e38]
+              - generic [ref=e39]:
+                - generic [ref=e40]:
+                  - heading "Aurora Espresso" [level=3] [ref=e41]
+                  - generic [ref=e42]: "2026"
+                - generic [ref=e43]:
+                  - paragraph [ref=e44]: A high-end minimalist espresso machine concept featuring brushed titanium, matte steel, and ribbed walnut wood.
+                  - paragraph [ref=e45]: Product Visualization
+          - link "Forma Chair Forma Chair 2026 A modern lounge chair visualization study focused on warm materials, balanced proportions and realistic interior presentation. Furniture visualization" [ref=e47] [cursor=pointer]:
+            - /url: /work/forma-chair
+            - generic [ref=e48]:
+              - img "Forma Chair" [ref=e51]
+              - generic [ref=e52]:
+                - generic [ref=e53]:
+                  - heading "Forma Chair" [level=3] [ref=e54]
+                  - generic [ref=e55]: "2026"
+                - generic [ref=e56]:
+                  - paragraph [ref=e57]: A modern lounge chair visualization study focused on warm materials, balanced proportions and realistic interior presentation.
+                  - paragraph [ref=e58]: Furniture visualization
+          - link "Linea Kitchen Linea Kitchen 2026 A bespoke kitchen visualization with travertine stone, warm oak cabinetry and architectural lighting. Interior visualization" [ref=e60] [cursor=pointer]:
+            - /url: /work/linea-kitchen
+            - generic [ref=e61]:
+              - img "Linea Kitchen" [ref=e64]
+              - generic [ref=e65]:
+                - generic [ref=e66]:
+                  - heading "Linea Kitchen" [level=3] [ref=e67]
+                  - generic [ref=e68]: "2026"
+                - generic [ref=e69]:
+                  - paragraph [ref=e70]: A bespoke kitchen visualization with travertine stone, warm oak cabinetry and architectural lighting.
+                  - paragraph [ref=e71]: Interior visualization
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - heading "Services" [level=2] [ref=e75]
+          - paragraph [ref=e76]: From initial 3D modelling to final polished renders and technical presentations, I offer flexible 3D support tailored to your project needs.
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - heading "Product rendering" [level=3] [ref=e79]
+            - paragraph [ref=e80]: High-quality still images for websites, presentations and marketing.
+          - generic [ref=e81]:
+            - heading "3D modelling" [level=3] [ref=e82]
+            - paragraph [ref=e83]: Clean 3D models based on sketches, references, CAD files or product ideas.
+          - generic [ref=e84]:
+            - heading "CAD to visual" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Turning technical models into polished visuals for presentation and sales.
+          - generic [ref=e87]:
+            - heading "Product animation" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Short product animations for social media, websites and client presentations.
+        - link "View all services" [ref=e91] [cursor=pointer]:
+          - /url: /services
+          - text: View all services
+          - img [ref=e92]
+      - generic [ref=e95]:
+        - generic [ref=e98]:
+          - figure "Max 3D Visualizer Product forms, CAD to visuals" [ref=e99]:
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - heading "Max" [level=3] [ref=e118]
+                - paragraph [ref=e119]: 3D Visualizer
+              - paragraph [ref=e120]: Product forms, CAD to visuals
+          - figure "Surface Material Artist Texture, lighting, realism" [ref=e121]:
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - heading "Surface" [level=3] [ref=e140]
+                - paragraph [ref=e141]: Material Artist
+              - paragraph [ref=e142]: Texture, lighting, realism
+          - figure "Motion Animation Support Short loops, reveals, edits" [ref=e143]:
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - heading "Motion" [level=3] [ref=e162]
+                - paragraph [ref=e163]: Animation Support
+              - paragraph [ref=e164]: Short loops, reveals, edits
+        - generic [ref=e165]:
+          - heading "A small studio feel, without a face photo." [level=2] [ref=e166]
+          - paragraph [ref=e167]: "The site uses stylized side-profile portraits to represent the 3D workflow: concept modelling, material realism and animated presentation."
+          - link "Read full bio" [ref=e169] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=e171]:
+        - heading "Looking for product visuals, renders or flexible 3D support?" [level=2] [ref=e172]
+        - link "Start a conversation" [ref=e173] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e174]:
+    - generic [ref=e175]:
+      - generic [ref=e176]: © 2026 Max. All rights reserved.
+      - generic [ref=e177]:
+        - link "Work" [ref=e178] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e179] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e180] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e181] [cursor=pointer]:
+          - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e187] [cursor=pointer]:
+    - img [ref=e188]
+  - alert [ref=e191]

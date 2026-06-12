@@ -1,0 +1,95 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Max" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Work" [ref=e6] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e7] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /contact
+        - link "Playground" [ref=e10] [cursor=pointer]:
+          - /url: /playground
+          - generic [ref=e11]:
+            - img [ref=e12]
+            - text: Playground
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Looking for product visuals, renders or a flexible 3D support partner?" [level=1] [ref=e19]
+        - paragraph [ref=e20]: Send me a message and I'll get back to you.
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - paragraph [ref=e23]: Email
+            - link "hello@example.com" [ref=e24] [cursor=pointer]:
+              - /url: mailto:hello@example.com
+          - generic [ref=e25]:
+            - paragraph [ref=e26]: Socials
+            - generic [ref=e27]:
+              - link "Instagram" [ref=e28] [cursor=pointer]:
+                - /url: "#"
+              - link "LinkedIn" [ref=e29] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e30]:
+            - paragraph [ref=e31]: Location
+            - paragraph [ref=e32]: Netherlands
+        - generic [ref=e35]:
+          - figure "Max Owner / Creative Lead Direction, concept and client contact" [ref=e36]:
+            - img "Studio owner portrait in side profile" [ref=e38]
+            - generic [ref=e40]:
+              - generic [ref=e41]:
+                - heading "Max" [level=3] [ref=e42]
+                - paragraph [ref=e43]: Owner / Creative Lead
+              - paragraph [ref=e44]: Direction, concept and client contact
+          - figure "Modeling 3D Modeler Clean geometry and CAD-based forms" [ref=e45]:
+            - img "3D modeler portrait at a workstation" [ref=e47]
+            - generic [ref=e49]:
+              - generic [ref=e50]:
+                - heading "Modeling" [level=3] [ref=e51]
+                - paragraph [ref=e52]: 3D Modeler
+              - paragraph [ref=e53]: Clean geometry and CAD-based forms
+          - figure "Render Render Artist Lighting, materials and final polish" [ref=e54]:
+            - img "Render artist portrait in a lighting studio" [ref=e56]
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - heading "Render" [level=3] [ref=e60]
+                - paragraph [ref=e61]: Render Artist
+              - paragraph [ref=e62]: Lighting, materials and final polish
+      - generic [ref=e64]:
+        - heading "Start a conversation" [level=2] [ref=e65]
+        - generic [ref=e66]:
+          - generic [ref=e67]: Name
+          - textbox "Name" [ref=e68]:
+            - /placeholder: John Doe
+        - generic [ref=e69]:
+          - generic [ref=e70]: Email
+          - textbox "Email" [ref=e71]:
+            - /placeholder: john@company.com
+        - generic [ref=e72]:
+          - generic [ref=e73]: Company (Optional)
+          - textbox "Company (Optional)" [ref=e74]:
+            - /placeholder: Company Name
+        - generic [ref=e75]:
+          - generic [ref=e76]: Message
+          - textbox "Message" [ref=e77]:
+            - /placeholder: Tell me about your project...
+        - button "Send Message" [ref=e78]
+  - contentinfo [ref=e79]:
+    - generic [ref=e80]:
+      - generic [ref=e81]: © 2026 Max. All rights reserved.
+      - generic [ref=e82]:
+        - link "Work" [ref=e83] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e84] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e85] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e86] [cursor=pointer]:
+          - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e92] [cursor=pointer]:
+    - img [ref=e93]
+  - alert [ref=e96]

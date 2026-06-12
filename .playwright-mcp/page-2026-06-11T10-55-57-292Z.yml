@@ -1,0 +1,85 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Max" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Work" [ref=e6] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e7] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /contact
+        - link "Playground" [ref=e10] [cursor=pointer]:
+          - /url: /playground
+          - generic [ref=e11]:
+            - img [ref=e12]
+            - text: Playground
+  - main [ref=e15]:
+    - generic [ref=e17]:
+      - generic [ref=e20]:
+        - figure "Max Owner / Creative Lead Direction, concept and client contact" [ref=e21]:
+          - img "Anonymous silhouette portrait of the studio owner in side profile" [ref=e23]
+          - generic [ref=e25]:
+            - generic [ref=e26]:
+              - heading "Max" [level=3] [ref=e27]
+              - paragraph [ref=e28]: Owner / Creative Lead
+            - paragraph [ref=e29]: Direction, concept and client contact
+        - figure "Modeling 3D Modeler Clean geometry and CAD-based forms" [ref=e30]:
+          - img "Anonymous silhouette portrait of a 3D modeler at a workstation" [ref=e32]
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - heading "Modeling" [level=3] [ref=e36]
+              - paragraph [ref=e37]: 3D Modeler
+            - paragraph [ref=e38]: Clean geometry and CAD-based forms
+        - figure "Render Render Artist Lighting, materials and final polish" [ref=e39]:
+          - img "Anonymous silhouette portrait of a render artist in a lighting studio" [ref=e41]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - heading "Render" [level=3] [ref=e45]
+              - paragraph [ref=e46]: Render Artist
+            - paragraph [ref=e47]: Lighting, materials and final polish
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - heading "About the studio" [level=1] [ref=e50]
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: I am Max, a product design student and 3D visualizer based in the Netherlands. Instead of a traditional face portrait, this site uses anonymous silhouette photography to keep the presentation personal without putting a recognizable face online.
+            - paragraph [ref=e53]: Specializing in Blender and Fusion 360, I translate ideas, sketches, and CAD models into polished visuals. Whether it's a lighting concept, modern furniture, or a technical packaging system, I strive to make every render feel tactile, intentional, and premium.
+            - paragraph [ref=e54]: "The three portraits represent the way a project moves through the studio: creative direction, clean 3D modeling, and final render polish. It gives the portfolio a small-team feeling while keeping the people intentionally private."
+        - generic [ref=e55]:
+          - heading "Capabilities" [level=2] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58]: 3D Modelling
+            - listitem [ref=e60]: Product Rendering
+            - listitem [ref=e62]: Technical Presentation
+            - listitem [ref=e64]: Product Animation
+            - listitem [ref=e66]: CAD to Visuals
+            - listitem [ref=e68]: Material Creation
+        - generic [ref=e70]:
+          - heading "Tools" [level=2] [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]: Blender
+            - generic [ref=e74]: Fusion 360
+            - generic [ref=e75]: Adobe Illustrator
+            - generic [ref=e76]: Adobe Photoshop
+            - generic [ref=e77]: After Effects
+            - generic [ref=e78]: Figma
+        - link "Get in touch" [ref=e80] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e81]:
+    - generic [ref=e82]:
+      - generic [ref=e83]: © 2026 Max. All rights reserved.
+      - generic [ref=e84]:
+        - link "Work" [ref=e85] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e86] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e87] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e88] [cursor=pointer]:
+          - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e94] [cursor=pointer]:
+    - img [ref=e95]
+  - alert [ref=e98]

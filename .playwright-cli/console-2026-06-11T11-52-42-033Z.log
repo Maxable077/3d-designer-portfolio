@@ -1,0 +1,36 @@
+[     281ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[     322ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    1160ms] [WARNING] Image with src "/service-furniture-interiors-clean.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    7145ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    7151ms] [LOG] [Fast Refresh] done in 108ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[    9993ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[   11365ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11426ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/blog/:0
+[   11433ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/demo-request/:0
+[   11457ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/product-rendering-price-list/:0
+[   11457ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/portfolio/:0
+[   11457ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/services/:0
+[   11457ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/case-studies/:0
+[   11543ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11543ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11543ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11544ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11544ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11544ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   11544ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   49500ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[   51659ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51740ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51740ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51740ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51740ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51741ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51741ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51741ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   51800ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/case-studies/:0
+[   51800ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/blog/:0
+[   51801ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/product-rendering-price-list/:0
+[   51801ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/demo-request/:0
+[   51817ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/services/:0
+[   51817ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://cgifurniture.com/portfolio/:0

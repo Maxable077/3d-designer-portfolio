@@ -1,0 +1,38 @@
+[    2116ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[    4805ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5671ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5671ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5671ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5672ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5672ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5672ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[    5672ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   38453ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[   41999ms] [WARNING] The resource https://www.googletagmanager.com/gtm.js?id=GTM-N8499QL was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://cgifurniture.com/:0
+[   41999ms] [WARNING] The resource https://static.hotjar.com/c/hotjar-5291834.js?sv=6 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://cgifurniture.com/:0
+[   42419ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42692ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42693ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42693ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42693ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42693ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42693ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   42694ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   64195ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[   66426ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66509ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66509ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66509ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66509ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66509ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66509ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[   66510ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  104269ms] [LOG] [bot-ssr-preserve] isBot: false @ https://cgifurniture.com/_nuxt/CxXz7NF9.js:5
+[  109313ms] [ERROR] Hydration completed but contains mismatches. @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109468ms] [LOG] Initializing LiveConnect @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109468ms] [LOG] events.bus.init @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109468ms] [LOG] handlers.error.register {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} null @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109469ms] [LOG] identifiers.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109469ms] [LOG] decisions.resolve {wrapperName: audigent, identifiersToResolve: Array(0), storageStrategy: none, gdprApplies: true, privacyMode: true} @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109469ms] [LOG] LiveConnect.enrichedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8
+[  109469ms] [LOG] LiveConnect.postManagedState {data: Object, combineWith: , asQuery: , asTuples: , sendsPixel: } @ https://cgifurniture.com/_nuxt/4ujpxNh4.js:8

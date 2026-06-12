@@ -1,0 +1,226 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Max" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Work" [ref=e6] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e7] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /contact
+        - link "Playground" [ref=e10] [cursor=pointer]:
+          - /url: /playground
+          - img [ref=e11]
+          - text: Playground
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e19]:
+        - heading "Product visuals, 3D renders & technical presentations." [level=1] [ref=e20]
+        - paragraph [ref=e21]: I create high-quality product renders, animations and visual concepts using Blender, Fusion 360 and Adobe tools.
+        - generic [ref=e22]:
+          - link "View work" [ref=e23] [cursor=pointer]:
+            - /url: /work
+          - link "Contact" [ref=e24] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: "01"
+          - generic [ref=e29]: Silo renders
+        - generic [ref=e30]:
+          - generic [ref=e31]: "02"
+          - generic [ref=e32]: Lifestyle scenes
+        - generic [ref=e33]:
+          - generic [ref=e34]: "03"
+          - generic [ref=e35]: Feature callouts
+        - generic [ref=e36]:
+          - generic [ref=e37]: "04"
+          - generic [ref=e38]: Motion assets
+        - generic [ref=e39]:
+          - generic [ref=e40]: "05"
+          - generic [ref=e41]: CAD to visual
+        - generic [ref=e42]:
+          - generic [ref=e43]: "06"
+          - generic [ref=e44]: Material creation
+        - generic [ref=e45]:
+          - generic [ref=e46]: "01"
+          - generic [ref=e47]: Silo renders
+        - generic [ref=e48]:
+          - generic [ref=e49]: "02"
+          - generic [ref=e50]: Lifestyle scenes
+        - generic [ref=e51]:
+          - generic [ref=e52]: "03"
+          - generic [ref=e53]: Feature callouts
+        - generic [ref=e54]:
+          - generic [ref=e55]: "04"
+          - generic [ref=e56]: Motion assets
+        - generic [ref=e57]:
+          - generic [ref=e58]: "05"
+          - generic [ref=e59]: CAD to visual
+        - generic [ref=e60]:
+          - generic [ref=e61]: "06"
+          - generic [ref=e62]: Material creation
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Production proof
+          - heading "Built like a content system, not a single loose render." [level=2] [ref=e67]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: "01"
+            - heading "One model, many outputs" [level=3] [ref=e71]
+            - paragraph [ref=e72]: A product can move from hero render to detail crop, shop image, deck frame and motion loop without rebuilding the visual system.
+          - generic [ref=e73]:
+            - paragraph [ref=e74]: "05"
+            - heading "Portfolio systems online" [level=3] [ref=e75]
+            - paragraph [ref=e76]: The current work already covers appliances, furniture, interiors, lighting and packaging so clients can see the range before a brief starts.
+          - generic [ref=e77]:
+            - paragraph [ref=e78]: 3D
+            - heading "Design-aware CGI" [level=3] [ref=e79]
+            - paragraph [ref=e80]: The workflow combines product design judgement with render craft, so form, material and composition are developed together.
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - heading "Featured work" [level=2] [ref=e83]
+          - link "All projects" [ref=e84] [cursor=pointer]:
+            - /url: /work
+            - text: All projects
+            - img [ref=e85]
+        - generic [ref=e87]:
+          - link "Aurora Espresso Aurora Espresso 2026 A high-end minimalist espresso machine concept featuring brushed titanium, matte steel, and ribbed walnut wood. Product Visualization" [ref=e89] [cursor=pointer]:
+            - /url: /work/aurora-espresso
+            - generic [ref=e90]:
+              - img "Aurora Espresso" [ref=e93]
+              - generic [ref=e94]:
+                - generic [ref=e95]:
+                  - heading "Aurora Espresso" [level=3] [ref=e96]
+                  - generic [ref=e97]: "2026"
+                - generic [ref=e98]:
+                  - paragraph [ref=e99]: A high-end minimalist espresso machine concept featuring brushed titanium, matte steel, and ribbed walnut wood.
+                  - paragraph [ref=e100]: Product Visualization
+          - link "Forma Chair Forma Chair 2026 A modern lounge chair visualization study focused on warm materials, balanced proportions and realistic interior presentation. Furniture visualization" [ref=e102] [cursor=pointer]:
+            - /url: /work/forma-chair
+            - generic [ref=e103]:
+              - img "Forma Chair" [ref=e106]
+              - generic [ref=e107]:
+                - generic [ref=e108]:
+                  - heading "Forma Chair" [level=3] [ref=e109]
+                  - generic [ref=e110]: "2026"
+                - generic [ref=e111]:
+                  - paragraph [ref=e112]: A modern lounge chair visualization study focused on warm materials, balanced proportions and realistic interior presentation.
+                  - paragraph [ref=e113]: Furniture visualization
+          - link "Linea Kitchen Linea Kitchen 2026 A bespoke kitchen visualization with travertine stone, warm oak cabinetry and architectural lighting. Interior visualization" [ref=e115] [cursor=pointer]:
+            - /url: /work/linea-kitchen
+            - generic [ref=e116]:
+              - img "Linea Kitchen" [ref=e119]
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - heading "Linea Kitchen" [level=3] [ref=e122]
+                  - generic [ref=e123]: "2026"
+                - generic [ref=e124]:
+                  - paragraph [ref=e125]: A bespoke kitchen visualization with travertine stone, warm oak cabinetry and architectural lighting.
+                  - paragraph [ref=e126]: Interior visualization
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: Visual content for product brands
+            - heading "Services shaped like a product content system." [level=2] [ref=e132]
+          - paragraph [ref=e133]: From clean e-commerce images to atmospheric lifestyle scenes and motion-ready assets, each project is built so one 3D model can support multiple moments in your launch.
+        - generic [ref=e134]:
+          - link "Unbranded lounge chair in a calm modern interior with soft daylight. Warm materials Furniture & interiors Furniture, kitchen and interior visuals with calm styling, believable scale and premium material direction." [ref=e136] [cursor=pointer]:
+            - /url: /work/forma-chair
+            - img "Unbranded lounge chair in a calm modern interior with soft daylight." [ref=e139]
+            - generic [ref=e140]:
+              - paragraph [ref=e141]: Warm materials
+              - heading "Furniture & interiors" [level=3] [ref=e142]
+              - paragraph [ref=e143]: Furniture, kitchen and interior visuals with calm styling, believable scale and premium material direction.
+          - link "Unbranded compact appliance rendered on a clean neutral studio background. Hero visuals Product & appliances Clean product renders for launch pages, portfolios, investor decks and sales presentations." [ref=e145] [cursor=pointer]:
+            - /url: /work/aurora-espresso
+            - img "Unbranded compact appliance rendered on a clean neutral studio background." [ref=e148]
+            - generic [ref=e149]:
+              - paragraph [ref=e150]: Hero visuals
+              - heading "Product & appliances" [level=3] [ref=e151]
+              - paragraph [ref=e152]: Clean product renders for launch pages, portfolios, investor decks and sales presentations.
+          - link "Warm sculptural table lamp on a minimal textured interior surface. Glow studies Lighting & decor Lighting objects, decor pieces and material close-ups where reflection, texture and atmosphere matter." [ref=e154] [cursor=pointer]:
+            - /url: /work/luma-light
+            - img "Warm sculptural table lamp on a minimal textured interior surface." [ref=e157]
+            - generic [ref=e158]:
+              - paragraph [ref=e159]: Glow studies
+              - heading "Lighting & decor" [level=3] [ref=e160]
+              - paragraph [ref=e161]: Lighting objects, decor pieces and material close-ups where reflection, texture and atmosphere matter.
+          - link "Blank premium packaging lineup on a bright e-commerce studio background. Product systems Packaging & e-commerce Consistent product sets for white-background shots, detail crops, campaign imagery and social assets." [ref=e163] [cursor=pointer]:
+            - /url: /work/nova-pack
+            - img "Blank premium packaging lineup on a bright e-commerce studio background." [ref=e166]
+            - generic [ref=e167]:
+              - paragraph [ref=e168]: Product systems
+              - heading "Packaging & e-commerce" [level=3] [ref=e169]
+              - paragraph [ref=e170]: Consistent product sets for white-background shots, detail crops, campaign imagery and social assets.
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - heading "Typical deliverables" [level=3] [ref=e173]
+            - link "View service menu" [ref=e174] [cursor=pointer]:
+              - /url: /services
+              - text: View service menu
+              - img [ref=e175]
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - heading "Silo renders" [level=4] [ref=e179]
+              - paragraph [ref=e180]: White or neutral background product images for shop pages, marketplaces and catalogues.
+            - generic [ref=e181]:
+              - heading "Lifestyle scenes" [level=4] [ref=e182]
+              - paragraph [ref=e183]: Contextual room, studio or tabletop scenes that show the product in use.
+            - generic [ref=e184]:
+              - heading "Feature callouts" [level=4] [ref=e185]
+              - paragraph [ref=e186]: Visual explanations for materials, proportions, mechanisms and product benefits.
+            - generic [ref=e187]:
+              - heading "Motion assets" [level=4] [ref=e188]
+              - paragraph [ref=e189]: Short product loops and reveal animations for web, pitch decks and social media.
+      - generic [ref=e191]:
+        - generic [ref=e194]:
+          - figure "Max Owner / Creative Lead Direction, concept and client contact" [ref=e195]:
+            - img "Studio owner portrait in side profile" [ref=e197]
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - heading "Max" [level=3] [ref=e201]
+                - paragraph [ref=e202]: Owner / Creative Lead
+              - paragraph [ref=e203]: Direction, concept and client contact
+          - figure "Modeling 3D Modeler Clean geometry and CAD-based forms" [ref=e204]:
+            - img "3D modeler portrait at a workstation" [ref=e206]
+            - generic [ref=e208]:
+              - generic [ref=e209]:
+                - heading "Modeling" [level=3] [ref=e210]
+                - paragraph [ref=e211]: 3D Modeler
+              - paragraph [ref=e212]: Clean geometry and CAD-based forms
+          - figure "Render Render Artist Lighting, materials and final polish" [ref=e213]:
+            - img "Render artist portrait in a lighting studio" [ref=e215]
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - heading "Render" [level=3] [ref=e219]
+                - paragraph [ref=e220]: Render Artist
+              - paragraph [ref=e221]: Lighting, materials and final polish
+        - generic [ref=e222]:
+          - heading "A focused studio setup for polished product visuals." [level=2] [ref=e223]
+          - paragraph [ref=e224]: Creative direction, precise modeling and final render polish come together in one lean visual workflow.
+          - link "Read full bio" [ref=e226] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=e228]:
+        - heading "Looking for product visuals, renders or flexible 3D support?" [level=2] [ref=e229]
+        - link "Start a conversation" [ref=e230] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e231]:
+    - generic [ref=e232]:
+      - generic [ref=e233]: © 2026 Max. All rights reserved.
+      - generic [ref=e234]:
+        - link "Work" [ref=e235] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e236] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e237] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e238] [cursor=pointer]:
+          - /url: /contact
+  - button "Vraag de studio" [ref=e240]:
+    - img [ref=e241]
+    - generic [ref=e243]: Vraag de studio
+  - alert [ref=e244]

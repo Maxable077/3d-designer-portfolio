@@ -1,0 +1,353 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Max" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Work" [ref=e6] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e7] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e9] [cursor=pointer]:
+          - /url: /contact
+        - link "Playground" [ref=e10] [cursor=pointer]:
+          - /url: /playground
+          - generic [ref=e11]:
+            - img [ref=e12]
+            - text: Playground
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: 3D render services
+          - heading "Product visuals that can carry the whole launch." [level=1] [ref=e21]
+        - generic [ref=e22]:
+          - paragraph [ref=e23]: "I help product brands, designers and makers turn CAD files, sketches or early concepts into polished render systems: hero images, shop visuals, detail crops, motion assets and technical presentation frames."
+          - link "Start a project" [ref=e24] [cursor=pointer]:
+            - /url: /contact
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: "01"
+          - generic [ref=e29]: Silo renders
+        - generic [ref=e30]:
+          - generic [ref=e31]: "02"
+          - generic [ref=e32]: Lifestyle scenes
+        - generic [ref=e33]:
+          - generic [ref=e34]: "03"
+          - generic [ref=e35]: Feature callouts
+        - generic [ref=e36]:
+          - generic [ref=e37]: "04"
+          - generic [ref=e38]: Motion assets
+        - generic [ref=e39]:
+          - generic [ref=e40]: "05"
+          - generic [ref=e41]: CAD to visual
+        - generic [ref=e42]:
+          - generic [ref=e43]: "06"
+          - generic [ref=e44]: Material creation
+        - generic [ref=e45]:
+          - generic [ref=e46]: "01"
+          - generic [ref=e47]: Silo renders
+        - generic [ref=e48]:
+          - generic [ref=e49]: "02"
+          - generic [ref=e50]: Lifestyle scenes
+        - generic [ref=e51]:
+          - generic [ref=e52]: "03"
+          - generic [ref=e53]: Feature callouts
+        - generic [ref=e54]:
+          - generic [ref=e55]: "04"
+          - generic [ref=e56]: Motion assets
+        - generic [ref=e57]:
+          - generic [ref=e58]: "05"
+          - generic [ref=e59]: CAD to visual
+        - generic [ref=e60]:
+          - generic [ref=e61]: "06"
+          - generic [ref=e62]: Material creation
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: Service range
+            - heading "Visual services built around product content." [level=2] [ref=e68]
+          - paragraph [ref=e69]: "The offer is organized by product situation first: what needs to be sold, explained, launched or reused. Each panel connects a product category to the assets it can produce."
+        - generic [ref=e70]:
+          - article [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - paragraph [ref=e75]: Warm materials
+                  - paragraph [ref=e76]: 01 / 04
+                - heading "Furniture & interiors" [level=3] [ref=e77]
+                - paragraph [ref=e78]: Furniture makers, interior brands and designers who need product imagery without arranging a physical shoot.
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - generic [ref=e81]: Lifestyle scenes
+                  - generic [ref=e82]: Material close-ups
+                  - generic [ref=e83]: Room compositions
+                  - generic [ref=e84]: Catalogue images
+                - link "View matching project" [ref=e85] [cursor=pointer]:
+                  - /url: /work/forma-chair
+                  - text: View matching project
+                  - img [ref=e86]
+            - img "Furniture & interiors" [ref=e89]
+          - article [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - paragraph [ref=e94]: Hero visuals
+                  - paragraph [ref=e95]: 02 / 04
+                - heading "Product & appliances" [level=3] [ref=e96]
+                - paragraph [ref=e97]: Product teams and makers who need precise visuals before photography, tooling or launch production is ready.
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - generic [ref=e100]: Hero images
+                  - generic [ref=e101]: White-background renders
+                  - generic [ref=e102]: Feature frames
+                  - generic [ref=e103]: Pitch visuals
+                - link "View matching project" [ref=e104] [cursor=pointer]:
+                  - /url: /work/aurora-espresso
+                  - text: View matching project
+                  - img [ref=e105]
+            - img "Product & appliances" [ref=e108]
+          - article [ref=e109]:
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - generic [ref=e112]:
+                  - paragraph [ref=e113]: Glow studies
+                  - paragraph [ref=e114]: 03 / 04
+                - heading "Lighting & decor" [level=3] [ref=e115]
+                - paragraph [ref=e116]: Lighting and decor brands that need to show glow, materials and atmosphere in controlled visual settings.
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e119]: Glow renders
+                  - generic [ref=e120]: Ambient scenes
+                  - generic [ref=e121]: Detail crops
+                  - generic [ref=e122]: Material studies
+                - link "View matching project" [ref=e123] [cursor=pointer]:
+                  - /url: /work/luma-light
+                  - text: View matching project
+                  - img [ref=e124]
+            - img "Lighting & decor" [ref=e127]
+          - article [ref=e128]:
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - paragraph [ref=e132]: Product systems
+                  - paragraph [ref=e133]: 04 / 04
+                - heading "Packaging & e-commerce" [level=3] [ref=e134]
+                - paragraph [ref=e135]: Brands that need one product model to become shop images, campaign scenes and reusable launch assets.
+              - generic [ref=e136]:
+                - generic [ref=e137]:
+                  - generic [ref=e138]: Product lineups
+                  - generic [ref=e139]: Silo images
+                  - generic [ref=e140]: Social crops
+                  - generic [ref=e141]: Campaign visuals
+                - link "View matching project" [ref=e142] [cursor=pointer]:
+                  - /url: /work/nova-pack
+                  - text: View matching project
+                  - img [ref=e143]
+            - img "Packaging & e-commerce" [ref=e146]
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - paragraph [ref=e150]: Studio roles
+          - heading "Three perspectives behind every render." [level=2] [ref=e151]
+          - paragraph [ref=e152]: Direction, modeling and render craft stay connected from the first reference board to the final export.
+        - generic [ref=e155]:
+          - figure "Max Owner / Creative Lead Direction, concept and client contact" [ref=e156]:
+            - img "Studio owner portrait in side profile" [ref=e158]
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - heading "Max" [level=3] [ref=e162]
+                - paragraph [ref=e163]: Owner / Creative Lead
+              - paragraph [ref=e164]: Direction, concept and client contact
+          - figure "Modeling 3D Modeler Clean geometry and CAD-based forms" [ref=e165]:
+            - img "3D modeler portrait at a workstation" [ref=e167]
+            - generic [ref=e169]:
+              - generic [ref=e170]:
+                - heading "Modeling" [level=3] [ref=e171]
+                - paragraph [ref=e172]: 3D Modeler
+              - paragraph [ref=e173]: Clean geometry and CAD-based forms
+          - figure "Render Render Artist Lighting, materials and final polish" [ref=e174]:
+            - img "Render artist portrait in a lighting studio" [ref=e176]
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - heading "Render" [level=3] [ref=e180]
+                - paragraph [ref=e181]: Render Artist
+              - paragraph [ref=e182]: Lighting, materials and final polish
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - paragraph [ref=e187]: Service menu
+            - heading "Deliverables" [level=2] [ref=e188]
+          - paragraph [ref=e189]: The strongest CGI work is reusable. A single clean model can become shop imagery, campaign visuals, feature explanations and short motion pieces without rebuilding the product every time.
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - heading "Silo renders" [level=3] [ref=e192]
+            - paragraph [ref=e193]: White or neutral background product images for shop pages, marketplaces and catalogues.
+            - paragraph [ref=e194]: Front, side, detail and product-family views.
+          - generic [ref=e195]:
+            - heading "Lifestyle scenes" [level=3] [ref=e196]
+            - paragraph [ref=e197]: Contextual room, studio or tabletop scenes that show the product in use.
+            - paragraph [ref=e198]: Furniture, interiors, lighting and packaging setups.
+          - generic [ref=e199]:
+            - heading "Feature callouts" [level=3] [ref=e200]
+            - paragraph [ref=e201]: Visual explanations for materials, proportions, mechanisms and product benefits.
+            - paragraph [ref=e202]: Close-ups, exploded views and annotated presentation frames.
+          - generic [ref=e203]:
+            - heading "Motion assets" [level=3] [ref=e204]
+            - paragraph [ref=e205]: Short product loops and reveal animations for web, pitch decks and social media.
+            - paragraph [ref=e206]: Turntables, material transitions and mechanism reveals.
+          - generic [ref=e207]:
+            - heading "CAD to visual" [level=3] [ref=e208]
+            - paragraph [ref=e209]: Transform technical models into refined visual assets with lighting, materials and composition.
+            - paragraph [ref=e210]: Fusion 360, STEP references and model cleanup.
+          - generic [ref=e211]:
+            - heading "Material creation" [level=3] [ref=e212]
+            - paragraph [ref=e213]: Surface studies that make wood, fabric, glass, metal and stone feel believable.
+            - paragraph [ref=e214]: Texture matching, shader setup and close-up validation.
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - img [ref=e220]
+            - text: Estimate project
+          - heading "Shape the render scope before we talk." [level=2] [ref=e224]
+          - paragraph [ref=e225]: Select the product complexity, source material and assets you need. The result is not a fixed quote, but it gives a much clearer starting package.
+          - generic [ref=e226]:
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - paragraph [ref=e229]: Recommended package
+                - heading "Campaign render set" [level=3] [ref=e230]
+              - img [ref=e231]
+            - paragraph [ref=e234]: Hero scene, silo images, detail crops and reusable crops for web or social.
+            - paragraph [ref=e235]: Best for a product page, investor deck or campaign push.
+            - generic [ref=e236]:
+              - img [ref=e237]
+              - text: "Typical production window: 1-3 weeks"
+            - link "Send this scope" [ref=e240] [cursor=pointer]:
+              - /url: /contact
+              - text: Send this scope
+              - img [ref=e241]
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - img [ref=e246]
+              - text: Step 1 / Product complexity
+            - generic [ref=e251]:
+              - button "Simple form Clean silhouette, few materials" [ref=e252]:
+                - generic [ref=e253]: Simple form
+                - generic [ref=e254]: Clean silhouette, few materials
+              - button "Detailed product Multiple parts and visible details" [ref=e255]:
+                - generic [ref=e256]:
+                  - text: Detailed product
+                  - img [ref=e257]
+                - generic [ref=e259]: Multiple parts and visible details
+              - button "Complex system Assemblies, mechanisms or variants" [ref=e260]:
+                - generic [ref=e261]: Complex system
+                - generic [ref=e262]: Assemblies, mechanisms or variants
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - img [ref=e265]
+              - text: Step 2 / Source material
+            - generic [ref=e269]:
+              - button "CAD available Model cleanup and render prep" [ref=e270]:
+                - generic [ref=e271]:
+                  - text: CAD available
+                  - img [ref=e272]
+                - generic [ref=e274]: Model cleanup and render prep
+              - button "Sketches or photos Model built from references" [ref=e275]:
+                - generic [ref=e276]: Sketches or photos
+                - generic [ref=e277]: Model built from references
+              - button "Concept only Form, model and direction" [ref=e278]:
+                - generic [ref=e279]: Concept only
+                - generic [ref=e280]: Form, model and direction
+          - generic [ref=e281]:
+            - generic [ref=e282]:
+              - img [ref=e283]
+              - text: Step 3 / Asset types
+            - generic [ref=e287]:
+              - button "Silo renders" [ref=e288]: Silo renders
+              - button "Lifestyle scene" [ref=e290]: Lifestyle scene
+              - button "Feature callouts" [ref=e292]: Feature callouts
+              - button "Material close-ups" [ref=e294]: Material close-ups
+              - button "Short animation" [ref=e296]: Short animation
+              - button "Social crops" [ref=e298]: Social crops
+          - generic [ref=e300]:
+            - generic [ref=e301]:
+              - img [ref=e302]
+              - text: Step 4 / Final image count
+            - generic [ref=e304]:
+              - button "1-3 finals Compact delivery" [ref=e305]:
+                - generic [ref=e306]: 1-3 finals
+                - generic [ref=e307]: Compact delivery
+              - button "4-8 finals Core campaign range" [ref=e308]:
+                - generic [ref=e309]:
+                  - text: 4-8 finals
+                  - img [ref=e310]
+                - generic [ref=e312]: Core campaign range
+              - button "Launch set Full asset family" [ref=e313]:
+                - generic [ref=e314]: Launch set
+                - generic [ref=e315]: Full asset family
+      - generic [ref=e316]:
+        - generic [ref=e317]:
+          - generic [ref=e318]:
+            - paragraph [ref=e319]: How it works
+            - heading "A simple render workflow." [level=2] [ref=e320]
+          - paragraph [ref=e321]: "The process stays lean: define the visual target, build the product properly, refine the image direction, then deliver final assets in the formats you need."
+        - generic [ref=e322]:
+          - generic [ref=e323]:
+            - paragraph [ref=e324]: "01"
+            - heading "Brief & references" [level=3] [ref=e325]
+            - paragraph [ref=e326]: We define the product, visual goal, formats and level of realism before production starts.
+          - generic [ref=e327]:
+            - paragraph [ref=e328]: "02"
+            - heading "Model & materials" [level=3] [ref=e329]
+            - paragraph [ref=e330]: The model is built or cleaned up, then materials are matched from CAD, sketches, photos or moodboards.
+          - generic [ref=e331]:
+            - paragraph [ref=e332]: "03"
+            - heading "Look development" [level=3] [ref=e333]
+            - paragraph [ref=e334]: Lighting, camera angles and styling are refined until the image direction feels premium and consistent.
+          - generic [ref=e335]:
+            - paragraph [ref=e336]: "04"
+            - heading "Final delivery" [level=3] [ref=e337]
+            - paragraph [ref=e338]: Final stills or motion assets are exported in the right formats, with room for focused revisions.
+      - generic [ref=e340]:
+        - generic [ref=e341]:
+          - paragraph [ref=e342]: Details
+          - heading "Common questions" [level=2] [ref=e343]
+        - generic [ref=e344]:
+          - group [ref=e346]:
+            - generic "What do I need to start a render project?" [ref=e347] [cursor=pointer]:
+              - text: What do I need to start a render project?
+              - img [ref=e348]
+          - group [ref=e351]:
+            - generic "Can you work from CAD files?" [ref=e352] [cursor=pointer]:
+              - text: Can you work from CAD files?
+              - img [ref=e353]
+          - group [ref=e356]:
+            - generic "Do you only make furniture visuals?" [ref=e357] [cursor=pointer]:
+              - text: Do you only make furniture visuals?
+              - img [ref=e358]
+          - group [ref=e361]:
+            - generic "Can one model become multiple assets?" [ref=e362] [cursor=pointer]:
+              - text: Can one model become multiple assets?
+              - img [ref=e363]
+      - generic [ref=e366]:
+        - heading "Have a product that needs a sharper visual story?" [level=2] [ref=e367]
+        - link "Send the brief" [ref=e368] [cursor=pointer]:
+          - /url: /contact
+          - text: Send the brief
+          - img [ref=e369]
+  - contentinfo [ref=e371]:
+    - generic [ref=e372]:
+      - generic [ref=e373]: © 2026 Max. All rights reserved.
+      - generic [ref=e374]:
+        - link "Work" [ref=e375] [cursor=pointer]:
+          - /url: /work
+        - link "Services" [ref=e376] [cursor=pointer]:
+          - /url: /services
+        - link "About" [ref=e377] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e378] [cursor=pointer]:
+          - /url: /contact
+  - button "Open Next.js Dev Tools" [ref=e384] [cursor=pointer]:
+    - img [ref=e385]

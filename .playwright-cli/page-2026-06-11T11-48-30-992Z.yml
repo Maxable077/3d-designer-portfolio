@@ -1,0 +1,549 @@
+- generic [active] [ref=e1]:
+  - region "We value your privacy" [ref=e2]:
+    - generic [ref=e3]:
+      - button "Close" [ref=e4] [cursor=pointer]
+      - generic [ref=e5]:
+        - heading "We value your privacy" [level=2] [ref=e6]
+        - generic [ref=e7]:
+          - paragraph [ref=e9]:
+            - text: This site may sell or share your data.
+            - text: "Opt out: ‘Do Not Sell or Share My Personal Information’"
+          - button "Do Not Sell or Share My Personal Information" [ref=e11] [cursor=pointer]
+  - generic [ref=e13]:
+    - banner [ref=e14]:
+      - generic [ref=e16]:
+        - link "CGI Furniture Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img "CGI Furniture logo" [ref=e18]
+        - navigation "Main navigation" [ref=e19]:
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "Work" [ref=e22] [cursor=pointer]:
+                - /url: /portfolio/
+            - listitem [ref=e23]:
+              - link "Services" [ref=e26] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=e27]:
+              - link "Who we are" [ref=e28] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=e29]:
+              - button "Insights" [ref=e32] [cursor=pointer]
+            - listitem [ref=e33]:
+              - button "Schedule a demo" [ref=e35] [cursor=pointer]:
+                - generic [ref=e36]: Schedule a demo
+            - listitem [ref=e37]
+    - main [ref=e39]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - heading "Bespoke Product CGI" [level=1] [ref=e45]
+          - paragraph [ref=e46]: Accelerate business growth with conversion-driven 3D rendering services
+        - generic [ref=e47]:
+          - button "Schedule a demo" [ref=e49] [cursor=pointer]:
+            - generic [ref=e50]: Schedule a demo
+          - button "Estimate project" [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: Estimate project
+      - generic [ref=e54]:
+        - heading "3D Rendering Company Trusted by the Best Brands" [level=2] [ref=e57]
+        - generic [ref=e58]:
+          - img "West Elm logo, retailer specializing in furniture and housewares, client of our 3D rendering services" [ref=e59]
+          - img "Article logo, furniture retailer and brand, client of our 3D modeling services" [ref=e60]
+          - img "Mitsubishi logo, global company, client of our 3D product rendering services" [ref=e61]
+          - img "Mohawk Industries logo, flooring manufacturer, client of our 3D visualization services" [ref=e62]
+          - img "Hilti logo, manufacturer of construction tools, client of our 3D product visualization services" [ref=e63]
+          - img "Floor & Decor logo, retailer of hard surface flooring, client of our 3D rendering services" [ref=e64]
+          - img "B&B Italia logo, luxury furniture company, client of our 3D visualization services" [ref=e65]
+          - img "Closet World logo, provider of custom home organizing solutions, client of our 3D modeling services" [ref=e66]
+          - img "Bella Cera logo, manufacturer of engineered hardwood flooring, client of our 3D rendering services" [ref=e67]
+          - img "Dorel Industries logo, designer and manufacturer of juvenile products, client of our 3D product visualization services" [ref=e68]
+          - img "Smallbone logo, bespoke furniture designer, client of our 3D rendering services" [ref=e69]
+          - img "BDI Furniture logo, modern home and office furniture designer, client of our 3D modeling services" [ref=e70]
+          - img "Frasch logo, manufacturer of acoustic solutions, client of our 3D product modeling services" [ref=e71]
+          - img "Classic WoodWork logo, high-end architectural woodworking specialist, client of our 3D visualization services" [ref=e72]
+          - img "Trueform Concrete logo, creators of handcrafted concrete products, client of our 3D modeling services" [ref=e73]
+          - img "Quantra Quartz logo, manufacturer of quartz surfaces, client of our 3D rendering services" [ref=e74]
+          - img "UK Radiators logo, supplier of stylish radiators and accessories, client of our 3D modeling services" [ref=e75]
+          - img "Global Doors logo, supplier of sliding wardrobe solutions, client of our 3D rendering services" [ref=e76]
+          - img "The Tile Shop logo, retailer of stone tiles and accessories, client of our 3D product modeling services" [ref=e77]
+          - img "Seawin logo, supplier of shower and bathroom products, client of our 3D modeling services" [ref=e78]
+          - img "Virginia Tile logo, provider of diverse tile solutions, client of our 3D rendering services" [ref=e79]
+      - generic [ref=e82]:
+        - generic [ref=e84]:
+          - paragraph [ref=e85]:
+            - generic [ref=e86]:
+              - text: Tap into the
+              - mark [ref=e87]: power of CG
+              - text: visual experiences that are perfect for your products. Any style, setting, or season.
+          - heading "3D Modeling and Rendering Services for Manufacturers & Retailers" [level=2] [ref=e88]
+        - generic [ref=e89]:
+          - generic [ref=e91]:
+            - 'img "Lifestyle 3D rendering of indoor furniture: sofa, armchair, and bookcase in a modern living room" [ref=e92]'
+            - generic [ref=e94]:
+              - heading "Indoor furniture" [level=3] [ref=e95]
+              - button "Schedule a demo" [ref=e97] [cursor=pointer]:
+                - generic [ref=e98]: Schedule a demo
+              - paragraph [ref=e99]: Present sofas, chairs, and storage in stylish interiors — with 3D rendering services. No photo studios or logistics needed.
+          - generic [ref=e101]:
+            - img "Luxury beachfront outdoor furniture setup with modern rattan chairs, wooden deck, and pergola overlooking turquoise ocean. Coastal patio design featuring woven hanging decorations, white cushions, potted plants, and bar-height tables in a resort-style setting. 3D rendering demonstration for all-season outdoor furniture visualization." [ref=e102]
+            - generic [ref=e104]:
+              - heading "Outdoor furniture" [level=3] [ref=e105]
+              - button "Schedule a demo" [ref=e107] [cursor=pointer]:
+                - generic [ref=e108]: Schedule a demo
+              - paragraph [ref=e109]: Let patio sets shine year-round. Our 3D rendering agency builds scenic outdoor visuals that work in any season or weather.
+          - generic [ref=e111]:
+            - img "Modern table lamp with perforated brass mesh shade and textured stone base displaying photorealistic 3D rendered lighting effects. Contemporary interior scene featuring warm ambient glow, olive green sofa, decorative concrete planter, and lifestyle accessories. Demonstration of high-end lighting fixture visualization with detailed material textures and subtle light reflections." [ref=e112]
+            - generic [ref=e114]:
+              - heading "Lighting" [level=3] [ref=e115]
+              - button "Schedule a demo" [ref=e117] [cursor=pointer]:
+                - generic [ref=e118]: Schedule a demo
+              - paragraph [ref=e119]: Visualize every fixture's glow, material, and shadow play. Our 3D visualization services are ideal for lighting manufacturers and decor brands.
+      - generic [ref=e120]:
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - paragraph [ref=e124]:
+              - generic [ref=e125]:
+                - text: Your
+                - mark [ref=e126]: one-stop solution
+                - text: for all your visual needs
+            - heading "Our 3D Render Services" [level=2] [ref=e127]
+          - paragraph [ref=e128]: At CGIFurniture, we deliver high-quality photorealistic visuals — including lifestyle renders, 3D animations, white-background images, and AR-ready models. As a leading 3D visualization company in the USA, we provide our partners with scalable, fast, and cost-effective solutions.
+        - generic [ref=e130]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - 'img "360 product photography services preview: potted indoor plant on a neutral studio background"'
+            - generic [ref=e135]:
+              - heading "360 Product Photography" [level=3] [ref=e137]
+              - generic:
+                - paragraph [ref=e138]: Let your website visitors enjoy exploring the product online. Get interactive renders crafted with our commercial 3D rendering services.
+                - link "Learn more about 360 Product Photography" [ref=e140] [cursor=pointer]:
+                  - /url: /service/360-product-spin-services/
+                  - text: Learn more about 360 Product Photography
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - 'img "3D animation for social media preview: styled dining room interior with a wooden table in a sunlit setting"'
+            - generic [ref=e146]:
+              - heading "3D Animation for Social Media" [level=3] [ref=e148]
+              - generic:
+                - paragraph [ref=e149]: High-impact CGI videos for product launches, reels, and ads. All created by our CGI rendering services team, no video shoots required.
+                - link "Learn more about 3D Animation for Social Media" [ref=e151] [cursor=pointer]:
+                  - /url: /service/3d-animation-for-social-media/
+                  - text: Learn more about 3D Animation for Social Media
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - 'img "3D modeling services preview: wooden dining table set in a sunlit modern interior"'
+            - generic [ref=e157]:
+              - heading "3D Modeling Services" [level=3] [ref=e159]
+              - generic:
+                - paragraph [ref=e160]: Take your marketing to the next level with universal and reusable marketing assets. Get detailed 3D models for all your marketing imagery with our online 3D rendering service.
+                - link "Learn more about 3D Modeling Services" [ref=e162] [cursor=pointer]:
+                  - /url: /service/3d-modeling-services/
+                  - text: Learn more about 3D Modeling Services
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - 'img "3D product animation preview: blue sofa and floating pillows in a stylized studio setting"'
+            - generic [ref=e168]:
+              - heading "3D Product Animation Services" [level=3] [ref=e170]
+              - generic:
+                - paragraph [ref=e171]: Use motion to explain complex features or functions. Our computer rendering services produce tutorial and promo animations.
+                - link "Learn more about 3D Product Animation Services" [ref=e173] [cursor=pointer]:
+                  - /url: /service/3d-product-animation-services/
+                  - text: Learn more about 3D Product Animation Services
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - 'img "3D texturing services preview: close-up of a fabric armchair showing detailed upholstery texture"'
+            - generic [ref=e179]:
+              - heading "3D Texturing Services" [level=3] [ref=e181]
+              - generic:
+                - paragraph [ref=e182]: Use the power of hyper-realistic surface replication, from wood grain to fabric weave. Our renderings company will create surfaces that will take your breath away.
+                - link "Learn more about 3D Texturing Services" [ref=e184] [cursor=pointer]:
+                  - /url: /service/3d-texturing-services/
+                  - text: Learn more about 3D Texturing Services
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - 'img "AR 3D modeling services preview: brown leather accent chair in a modern interior"'
+            - generic [ref=e190]:
+              - heading "AR 3D Modeling Services" [level=3] [ref=e192]
+              - generic:
+                - paragraph [ref=e193]: Let customers place products virtually into their homes before buying. Our 3D rendering services studio will create game-changing AR-ready assets.
+                - link "Learn more about AR 3D Modeling Services" [ref=e195] [cursor=pointer]:
+                  - /url: /service/ar-3d-modeling-services/
+                  - text: Learn more about AR 3D Modeling Services
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - 'img "Flatlay render services preview: top-down composition of decor materials, textured surfaces, and styling props"'
+            - generic [ref=e201]:
+              - heading "Flatlay Renders" [level=3] [ref=e203]
+              - generic:
+                - paragraph [ref=e204]: Empower your social media presence with top-down visuals that combine materials and decor. Our 3D visualization agency will design gems that will capture attention.
+                - link "Learn more about Flatlay Renders" [ref=e206] [cursor=pointer]:
+                  - /url: /service/flatlay-3d-rendering-services/
+                  - text: Learn more about Flatlay Renders
+          - generic [ref=e210]:
+            - generic [ref=e211]:
+              - 'img "Lifestyle 3D rendering services preview: cozy bedroom interior with a wooden bed and layered bedding"'
+            - generic [ref=e212]:
+              - heading "Lifestyle 3D Rendering" [level=3] [ref=e214]
+              - generic:
+                - paragraph [ref=e215]: Show your products in aspirational settings and real-life use. Get Instagram-ready visuals with our 3D visualisation company's help.
+                - link "Learn more about Lifestyle 3D Rendering" [ref=e217] [cursor=pointer]:
+                  - /url: /service/3d-lifestyle-rendering-services/
+                  - text: Learn more about Lifestyle 3D Rendering
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - 'img "Product feature rendering preview: close-up of a hand pressing a patterned mattress in a bedroom"'
+            - generic [ref=e223]:
+              - heading "Product Feature Rendering" [level=3] [ref=e225]
+              - generic:
+                - paragraph [ref=e226]: Forget long text-heavy specs on the site to highlight the product features. Users do not read them. Use visual callouts created by professional rendering services.
+                - link "Learn more about Product Feature Rendering" [ref=e228] [cursor=pointer]:
+                  - /url: /service/product-feature-rendering-services/
+                  - text: Learn more about Product Feature Rendering
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - 'img "Silo 3D visualization preview: modern privacy chair with side table in a commercial interior"'
+            - generic [ref=e234]:
+              - heading "Silo 3D Visualization" [level=3] [ref=e236]
+              - generic:
+                - paragraph [ref=e237]: Power up your eCommerce presence. Commission white-background images for Amazon and Shopify with our 3D rendering firm. Get them faster than ever.
+                - link "Learn more about Silo 3D Visualization" [ref=e239] [cursor=pointer]:
+                  - /url: /service/silo-3d-rendering-services/
+                  - text: Learn more about Silo 3D Visualization
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - paragraph [ref=e245]:
+              - generic [ref=e246]:
+                - text: Create your
+                - mark [ref=e247]: product detail page
+            - heading "Simple pricing of 3D content for e-commerce" [level=2] [ref=e248]
+          - paragraph [ref=e249]: Estimate your 3D rendering project in minutes. Select model complexity, lifestyle settings, and optional AR. Get a full pricing breakdown — fast and transparent.
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - generic [ref=e253]: Step 1 / 4
+              - paragraph [ref=e254]: How complex does your average product look?
+            - generic [ref=e255]:
+              - generic [ref=e256]: Prices listed for orders of
+              - combobox "Order quantity for pricing" [ref=e258]:
+                - option "<10 units"
+                - option "10-49 units"
+                - option "50-199 units" [selected]
+                - option "200+ units"
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - img "Wooden Chair 3D Model on White Background" [ref=e263] [cursor=pointer]
+              - generic [ref=e264]:
+                - generic [ref=e265]:
+                  - paragraph [ref=e266]: Simple
+                  - paragraph [ref=e267]: $100$130
+                - button "Select" [ref=e268] [cursor=pointer]:
+                  - generic [ref=e269]: Select
+            - generic [ref=e270]:
+              - img "Armchair 3D Model on White Background" [ref=e272] [cursor=pointer]
+              - generic [ref=e273]:
+                - generic [ref=e274]:
+                  - paragraph [ref=e275]: Medium
+                  - paragraph [ref=e276]: $160$330
+                - button "Select" [ref=e277] [cursor=pointer]:
+                  - generic [ref=e278]: Select
+            - generic [ref=e279]:
+              - img "Round Wicker Furniture 3D Model against White" [ref=e281] [cursor=pointer]
+              - generic [ref=e282]:
+                - generic [ref=e283]:
+                  - paragraph [ref=e284]: Complex
+                  - paragraph [ref=e285]: $380$780
+                - button "Select" [ref=e286] [cursor=pointer]:
+                  - generic [ref=e287]: Select
+          - text: "* *"
+          - button "Continue" [ref=e289] [cursor=pointer]
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - heading "See what our clients say" [level=2] [ref=e295]
+          - generic [ref=e296]:
+            - button "Previous review" [ref=e297] [cursor=pointer]
+            - button "Next review" [ref=e299] [cursor=pointer]
+        - generic [ref=e306]:
+          - generic [ref=e308]:
+            - generic [ref=e309]:
+              - generic [ref=e310]:
+                - img "Jesus Barreda - P.E., MEng Technical Services | Engineering Manager at Hilti" [ref=e311]
+                - 'img "Rating: 5 out of 5 stars" [ref=e312]'
+                - img "Logo of the “Hilti” company - client of our 3D visualization services." [ref=e319]
+              - generic [ref=e321]: “
+              - generic [ref=e322]: CGIFURNITURE offers first-class services. They have outstanding artists and services. They strive to deliver the best results in the market and although they are in another country, the communication is always very smooth. I HIGHLY recommend their services.
+            - generic [ref=e323]:
+              - generic [ref=e325]: Jesus Barreda
+              - generic [ref=e326]: P.E., MEng Technical Services | Engineering Manager,
+              - generic [ref=e327]: Hilti
+          - generic [ref=e329]:
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - img "Dave Adams - Marketing Director at BDi" [ref=e332]
+                - 'img "Rating: 5 out of 5 stars" [ref=e333]'
+                - img "Logo of the “BDi” company - client of our 3D visualization services." [ref=e340]
+              - generic [ref=e342]: “
+              - generic [ref=e343]: We have been partnering with Cgifurniture for years. Their fine team of committed and innovative designers treats every project beautifully and does not stop until they get it right. Highly recommended for all rendering and animation needs.
+            - generic [ref=e344]:
+              - generic [ref=e346]: Dave Adams
+              - generic [ref=e347]: Marketing Director,
+              - generic [ref=e348]: BDi
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e352]:
+                - img "Matthew Sleeper - Graphic Designer at Danby Appliances" [ref=e353]
+                - 'img "Rating: 5 out of 5 stars" [ref=e354]'
+                - img "Logo of the “Danby Appliances” company - client of our 3D visualization services." [ref=e361]
+              - generic [ref=e363]: “
+              - generic [ref=e364]: The whole team at CGI Furniture were great to work with! They executed high-quality renders for our products in a very timely manner and consistently ensure they were accurate with their clear communication. They have a talented team of designers and project managers that I highly recommend!
+            - generic [ref=e365]:
+              - generic [ref=e367]: Matthew Sleeper
+              - generic [ref=e368]: Graphic Designer,
+              - generic [ref=e369]: Danby Appliances
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - img "MariaEnrica Vittoria - Creative Director at DMF Lighting" [ref=e374]
+                - 'img "Rating: 4 out of 5 stars" [ref=e375]'
+                - img "Logo of the “DMF Lighting” company - client of our 3D visualization services." [ref=e382]
+              - generic [ref=e384]: “
+              - generic [ref=e385]: I recently collaborated with CGI Furniture on various projects, and it was a great experience. The quality of their work stood out, particularly in their attention to detail and realistic renders. Their project management is incredibly efficient, ensuring deadlines were met while maintaining high quality. [...]
+            - generic [ref=e386]:
+              - generic [ref=e388]: MariaEnrica Vittoria
+              - generic [ref=e389]: Creative Director,
+              - generic [ref=e390]: DMF Lighting
+          - generic [ref=e392]:
+            - generic [ref=e393]:
+              - generic [ref=e394]:
+                - img "Mikaela McLaughlin - Business Development at Sklar Furnishings" [ref=e395]
+                - 'img "Rating: 5 out of 5 stars" [ref=e396]'
+                - img "Logo of the “Sklar Furnishings” company - client of our 3D visualization services." [ref=e403]
+              - generic [ref=e405]: “
+              - generic [ref=e406]: We love working with this company for a quick process and a beautiful result. On behalf of all of us at Sklar Furnishings, thank you for a five star experience and results every time! Thank you to the CGIFURNITURE Team for our beautiful renderings.
+            - generic [ref=e407]:
+              - generic [ref=e409]: Mikaela McLaughlin
+              - generic [ref=e410]: Business Development,
+              - generic [ref=e411]: Sklar Furnishings
+          - generic [ref=e413]:
+            - generic [ref=e414]:
+              - generic [ref=e415]:
+                - img "Rafa Berrazueta - works at Bru Textiles" [ref=e416]
+                - 'img "Rating: 4 out of 5 stars" [ref=e417]'
+                - img "Logo of the “Bru Textiles” company - client of our 3D visualization services." [ref=e424]
+              - generic [ref=e426]: “
+              - generic [ref=e427]: It's challenging to encapsulate all the positives, but the crown jewel of CGIFurniture's offerings is undoubtedly its team. Comprising professional CGI maestros, they provide unparalleled support as you and your clients navigate the ever-evolving landscape of modern technology. [...]
+            - generic [ref=e430]: Rafa Berrazueta
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]:
+                - img "Vanessa Copeland - Marketing Director at Schwank" [ref=e435]
+                - 'img "Rating: 5 out of 5 stars" [ref=e436]'
+                - img "Logo of the “Schwank” company - client of our 3D visualization services." [ref=e443]
+              - generic [ref=e445]: “
+              - generic [ref=e446]: Very easy to work with and use a seamless communication system! Excited for upcoming projects.
+            - generic [ref=e447]:
+              - generic [ref=e449]: Vanessa Copeland
+              - generic [ref=e450]: Marketing Director,
+              - generic [ref=e451]: Schwank
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - generic [ref=e455]:
+                - img "Andrèa Lunardón - Marketing Manager at Target Point" [ref=e456]
+                - 'img "Rating: 4 out of 5 stars" [ref=e457]'
+                - img "Logo of the “Target Point” company - client of our 3D visualization services." [ref=e464]
+              - generic [ref=e466]: “
+              - generic [ref=e467]: I've been working with them for 3D modeling of our products.Professional and quick results at a reasonable price, I definitely recommend this company.
+            - generic [ref=e468]:
+              - generic [ref=e470]: Andrèa Lunardón
+              - generic [ref=e471]: Marketing Manager,
+              - generic [ref=e472]: Target Point
+          - generic [ref=e474]:
+            - generic [ref=e475]:
+              - generic [ref=e476]:
+                - img "Trevor Forssell - Director of Marketing at Mighty Bright" [ref=e477]
+                - 'img "Rating: 5 out of 5 stars" [ref=e478]'
+                - img "Logo of the “Mighty Bright” company - client of our 3D visualization services." [ref=e485]
+              - generic [ref=e487]: “
+              - generic [ref=e488]: Discovering CGIFURNITURE was like finding a winning lottery ticket, covered in gold, inside of a Fabergé egg! The team is attentive, talented, and take direction well. The finest 3D rendering work we’ve ever had done!
+            - generic [ref=e489]:
+              - generic [ref=e491]: Trevor Forssell
+              - generic [ref=e492]: Director of Marketing,
+              - generic [ref=e493]: Mighty Bright
+          - generic [ref=e495]:
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - img "Alvaro Zaralli - Owner at ArtOne" [ref=e498]
+                - 'img "Rating: 5 out of 5 stars" [ref=e499]'
+                - img "Logo of the “ArtOne” company - client of our 3D visualization services." [ref=e506]
+              - generic [ref=e508]: “
+              - generic [ref=e509]: I truly mean when I said you have a great team and you are all great at what you do, and I consider your team an extension of mine.
+            - generic [ref=e510]:
+              - generic [ref=e512]: Alvaro Zaralli
+              - generic [ref=e513]: Owner,
+              - generic [ref=e514]: ArtOne
+          - generic [ref=e516]:
+            - generic [ref=e517]:
+              - generic [ref=e518]:
+                - img "Cristan Haliburton - Digital Marketing Specialist at Beauflor USA" [ref=e519]
+                - 'img "Rating: 5 out of 5 stars" [ref=e520]'
+                - img "Logo of the “Beauflor USA” company - client of our 3D visualization services." [ref=e527]
+              - generic [ref=e529]: “
+              - generic [ref=e530]: Very easy to work with and use a seamless communication system! Excited for upcoming projects.
+            - generic [ref=e531]:
+              - generic [ref=e533]: Cristan Haliburton
+              - generic [ref=e534]: Digital Marketing Specialist,
+              - generic [ref=e535]: Beauflor USA
+          - generic [ref=e537]:
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - img "Steve Tipson - Director at Sozo Ltd." [ref=e540]
+                - 'img "Rating: 5 out of 5 stars" [ref=e541]'
+                - img "Logo of the “Sozo Ltd.” company - client of our 3D visualization services." [ref=e548]
+              - generic [ref=e550]: “
+              - generic [ref=e551]: Excellent value, service and output. Visuals created were very high quality. Any feedback was very quickly incorporated and nothing was a problem. Will be placing an order for a larger set of products soon.
+            - generic [ref=e552]:
+              - generic [ref=e554]: Steve Tipson
+              - generic [ref=e555]: Director,
+              - generic [ref=e556]: Sozo Ltd.
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - generic [ref=e561]:
+            - generic [ref=e562]: Excellent
+            - generic [ref=e563]: "|"
+            - generic [ref=e564]: "4.7"
+          - img "Trustpilot rating"
+          - link "Review us on Trustpilot logo" [ref=e565] [cursor=pointer]:
+            - /url: https://trustpilot.com/review/cgifurniture.com
+            - generic [ref=e566]: Review us on
+            - img "Trustpilot logo"
+        - generic:
+          - img "Amazon Certificate for CGIFurniture for 3D modeling and rendering Content"
+      - generic [ref=e569]:
+        - generic [ref=e570]:
+          - generic [ref=e571]:
+            - heading "Answers to common questions" [level=2] [ref=e572]
+            - paragraph [ref=e573]: Resolving your questions before we begin
+          - paragraph [ref=e574]: Find clear answers to the most common questions about our services. You will find here everything, from file formats and turnaround times to pricing. We aim to make every step of your experience smooth, transparent, and hassle-free.
+        - generic [ref=e575]:
+          - generic [ref=e577]:
+            - generic [ref=e579]:
+              - heading "What details are required to begin a 3D rendering project?" [level=3] [ref=e580]
+              - 'button "Expand FAQ: What details are required to begin a 3D rendering project?" [ref=e582] [cursor=pointer]':
+                - generic [ref=e583]: "Expand FAQ: What details are required to begin a 3D rendering project?"
+            - generic [ref=e585]:
+              - heading "How long does the process of creating a 3D rendering typically take?" [level=3] [ref=e586]
+              - 'button "Expand FAQ: How long does the process of creating a 3D rendering typically take?" [ref=e588] [cursor=pointer]':
+                - generic [ref=e589]: "Expand FAQ: How long does the process of creating a 3D rendering typically take?"
+            - generic [ref=e591]:
+              - heading "What kinds of 3D rendering services do you provide?" [level=3] [ref=e592]
+              - 'button "Expand FAQ: What kinds of 3D rendering services do you provide?" [ref=e594] [cursor=pointer]':
+                - generic [ref=e595]: "Expand FAQ: What kinds of 3D rendering services do you provide?"
+          - generic [ref=e597]:
+            - generic [ref=e599]:
+              - heading "Is it possible to request edits or revisions to the renderings after completion?" [level=3] [ref=e600]
+              - 'button "Expand FAQ: Is it possible to request edits or revisions to the renderings after completion?" [ref=e602] [cursor=pointer]':
+                - generic [ref=e603]: "Expand FAQ: Is it possible to request edits or revisions to the renderings after completion?"
+            - generic [ref=e605]:
+              - heading "Which industries benefit from 3D rendering services?" [level=3] [ref=e606]
+              - 'button "Expand FAQ: Which industries benefit from 3D rendering services?" [ref=e608] [cursor=pointer]':
+                - generic [ref=e609]: "Expand FAQ: Which industries benefit from 3D rendering services?"
+            - generic [ref=e611]:
+              - heading "Why are 3D rendering services more effective than traditional photography?" [level=3] [ref=e612]
+              - 'button "Expand FAQ: Why are 3D rendering services more effective than traditional photography?" [ref=e614] [cursor=pointer]':
+                - generic [ref=e615]: "Expand FAQ: Why are 3D rendering services more effective than traditional photography?"
+        - link "See all FAQs" [ref=e617] [cursor=pointer]:
+          - /url: /3d-modeling-terms-faq/
+          - generic [ref=e618]: See all FAQs
+      - generic [ref=e620]:
+        - img "Cover image for the Commercial CGI & Product Rendering Guide. Minimalist interior with designer chair, low table and decor, done in a warm color scheme." [ref=e621]
+        - generic [ref=e624]:
+          - generic [ref=e625]:
+            - paragraph [ref=e626]: Get the Commercial CGI & Product Rendering Guide for Marketing Directors
+            - generic [ref=e627]:
+              - paragraph [ref=e628]: Everything you need to scale product content with CGI.
+              - paragraph [ref=e629]: Get expert insights, real project examples, and strategies with proven ROI.
+              - paragraph [ref=e630]: Fill out the form to receive the guide directly in your inbox.
+          - generic [ref=e633]:
+            - generic [ref=e634]:
+              - generic [ref=e637]: Name*
+              - textbox "Name*" [ref=e640]
+            - generic [ref=e641]:
+              - generic [ref=e644]: Email*
+              - textbox "Email*" [ref=e647]
+            - button "Send me the guide" [ref=e648] [cursor=pointer]:
+              - generic [ref=e649]: Send me the guide
+    - contentinfo [ref=e651]:
+      - generic [ref=e654]:
+        - generic [ref=e655]:
+          - generic:
+            - link "CGI Furniture Homepage":
+              - /url: /
+              - generic:
+                - img "CGI Furniture logo"
+          - generic [ref=e657]:
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - paragraph [ref=e660]: Contact us 24/7
+                - list [ref=e661]:
+                  - listitem [ref=e662]:
+                    - link "+44 203 617 1683" [ref=e663] [cursor=pointer]:
+                      - /url: tel:+442036171683
+                  - listitem [ref=e664]:
+                    - link "sales@cgifurniture.com" [ref=e665] [cursor=pointer]:
+                      - /url: mailto:sales@cgifurniture.com
+              - generic [ref=e666]:
+                - paragraph [ref=e667]: Address
+                - generic [ref=e668]:
+                  - paragraph [ref=e669]: Archivizer Limited
+                  - paragraph [ref=e670]: 16 Ashleigh Road
+                  - paragraph [ref=e671]: London, SW14 8PX
+                  - paragraph [ref=e672]: United Kingdom
+            - generic [ref=e674]:
+              - paragraph [ref=e675]: Company
+              - list [ref=e676]:
+                - listitem [ref=e677]:
+                  - link "Features" [ref=e678] [cursor=pointer]:
+                    - /url: /3d-product-modeling-company-features/
+                - listitem [ref=e679]:
+                  - link "FAQ" [ref=e680] [cursor=pointer]:
+                    - /url: /3d-modeling-terms-faq/
+                - listitem [ref=e681]:
+                  - link "Partnership" [ref=e682] [cursor=pointer]:
+                    - /url: /partnership/
+            - generic [ref=e684]:
+              - paragraph [ref=e685]: Services
+              - list [ref=e686]:
+                - listitem [ref=e687]:
+                  - generic [ref=e689] [cursor=pointer]: Product Images
+                - listitem [ref=e691]:
+                  - generic [ref=e693] [cursor=pointer]: Product Animation
+                - listitem [ref=e695]:
+                  - generic [ref=e697] [cursor=pointer]: 3D Modeling
+                - listitem [ref=e699]:
+                  - generic [ref=e701] [cursor=pointer]: Interactive Content
+                - listitem [ref=e703]:
+                  - generic [ref=e705] [cursor=pointer]: Industries
+        - list [ref=e710]:
+          - listitem [ref=e711]:
+            - link "CGI Furniture Facebook" [ref=e712] [cursor=pointer]:
+              - /url: https://www.facebook.com/cgifurniturecom/
+          - listitem [ref=e713]:
+            - link "CGI Furniture Instagram" [ref=e714] [cursor=pointer]:
+              - /url: https://www.instagram.com/cgifurniture
+          - listitem [ref=e715]:
+            - link "CGI Furniture LinkedIn" [ref=e716] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/cgifurniture
+          - listitem [ref=e717]:
+            - link "CGI Furniture Behance" [ref=e718] [cursor=pointer]:
+              - /url: https://www.behance.net/cgi-furniture
+          - listitem [ref=e719]:
+            - link "CGI Furniture YouTube" [ref=e720] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCnsQYwDI950X83-304Ea8xg
+          - listitem [ref=e721]:
+            - link "CGI Furniture Vimeo" [ref=e722] [cursor=pointer]:
+              - /url: https://vimeo.com/user135005436
+        - generic [ref=e724]:
+          - generic [ref=e725]:
+            - link "Privacy Policy" [ref=e726] [cursor=pointer]:
+              - /url: /privacy-policy/
+            - link "Terms of Service" [ref=e727] [cursor=pointer]:
+              - /url: /terms-of-service/
+          - generic [ref=e728]: © Copyright 2011–2026 CGI Furniture. All Rights Reserved.
