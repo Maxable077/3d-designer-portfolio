@@ -2,22 +2,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { MotionDeliverableStrip } from "@/components/MotionDeliverableStrip";
-import { ProjectCard } from "@/components/ProjectCard";
-import { ServiceProofSection } from "@/components/ServiceProofSection";
-import { StudioPortraits } from "@/components/StudioPortraits";
+import { MagneticButton } from "@/components/MagneticButton";
+import { InfiniteMarquee } from "@/components/InfiniteMarquee";
+import { InfiniteCardCarousel } from "@/components/InfiniteCardCarousel";
+import { SubServicesGrid } from "@/components/SubServicesGrid";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
+import { FAQAccordion } from "@/components/FAQAccordion";
 import { projects } from "@/data/projects";
-import { deliverables, serviceFamilies } from "@/data/services";
+import { serviceFamilies } from "@/data/services";
 
 export default function Home() {
   const featuredProjects = projects.slice(0, 3);
   const featuredServices = serviceFamilies.slice(0, 4);
-  const featuredDeliverables = deliverables.slice(0, 4);
 
   return (
-    <div className="flex flex-col gap-32 md:gap-48 pb-20">
-      {/* Hero Section */}
-      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="flex flex-col bg-brand-bg text-brand-text">
+      {/* Hero Section - Matching CGIFurniture full height video */}
+      <section id="hero" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <video 
             src="/hero-video-combined.mp4" 
@@ -25,164 +26,174 @@ export default function Home() {
             loop 
             muted 
             playsInline 
-            className="w-full h-full object-cover scale-[1.15] origin-center"
+            className="w-full h-full object-cover scale-[1.30] origin-center"
           />
-          {/* Dark overlays to make text readable */}
+          {/* Dark overlays */}
           <div className="absolute inset-0 bg-black/40 pointer-events-none" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none" />
         </div>
         
-        <AnimatedSection className="relative z-10 flex flex-col items-center text-center gap-8 max-w-4xl px-6 pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-[4.5rem] font-medium tracking-tight leading-[1.05] text-white drop-shadow-md">
-            Product visuals, 3D renders & technical presentations.
-          </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed drop-shadow-sm">
-            I create high-quality product renders, animations and visual concepts using Blender, Fusion 360 and Adobe tools.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Link 
-              href="/work" 
-              className="inline-flex items-center justify-center bg-white text-black px-8 py-4 text-sm font-medium transition-transform hover:scale-[1.02] active:scale-95"
-            >
-              View work
-            </Link>
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center justify-center border border-white/30 bg-black/30 backdrop-blur-md text-white px-8 py-4 text-sm font-medium transition-colors hover:bg-white/10"
-            >
-              Contact
-            </Link>
-          </div>
-        </AnimatedSection>
-      </section>
-
-      <MotionDeliverableStrip />
-
-      <ServiceProofSection />
-
-      {/* Featured Projects */}
-      <section className="max-w-7xl mx-auto px-6 w-full">
-        <AnimatedSection className="flex justify-between items-end mb-16 border-b border-brand-accent pb-6">
-          <h2 className="text-3xl md:text-4xl font-medium tracking-tight">Featured work</h2>
-          <Link href="/work" className="hidden md:flex items-center gap-2 text-sm font-medium text-brand-muted hover:text-brand-text transition-colors group">
-            All projects <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </AnimatedSection>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-          {featuredProjects.map((project, index) => (
-            <AnimatedSection key={project.slug} delay={index * 0.1}>
-              <ProjectCard 
-                slug={project.slug}
-                title={project.title}
-                category={project.meta.category}
-                year={project.meta.year}
-                description={project.shortDescription}
-                thumbnailUrl={project.thumbnailUrl}
-              />
-            </AnimatedSection>
-          ))}
-        </div>
-        <div className="mt-12 md:hidden">
-          <Link href="/work" className="inline-flex items-center justify-center w-full border border-brand-accent bg-transparent text-brand-text px-8 py-4 text-sm font-medium">
-            View all projects
-          </Link>
-        </div>
-      </section>
-
-      {/* Services Preview */}
-      <section className="bg-brand-bg-alt py-32">
-        <div className="max-w-7xl mx-auto px-6 w-full">
-          <AnimatedSection className="mb-16 grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-16 items-end">
-            <div>
-              <p className="text-sm text-brand-muted mb-4">Visual content for product brands</p>
-              <h2 className="text-3xl md:text-4xl font-medium tracking-tight">Services shaped like a product content system.</h2>
-            </div>
-            <p className="text-lg text-brand-muted leading-relaxed max-w-2xl lg:ml-auto">
-              From clean e-commerce images to atmospheric lifestyle scenes and motion-ready assets, each project is built so one 3D model can support multiple moments in your launch.
+        <AnimatedSection className="relative w-full pb-8 px-4 z-10">
+          <div className="text-white text-center mt-20">
+            <h1 className="text-5xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-black tracking-tight drop-shadow-md">
+              Bespoke Product CGI
+            </h1>
+            <p className="text-lg sm:text-xl xl:text-2xl font-light mt-6 drop-shadow-sm">
+              Accelerate business growth with conversion-driven 3D rendering services
             </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {featuredServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={index * 0.08}>
-                <Link href={service.href} className="group block">
-                  <div className="overflow-hidden rounded-sm mb-5">
-                    <div className="relative aspect-[4/3] transition-transform duration-700 ease-[cubic-bezier(0.21,0.47,0.32,0.98)] group-hover:scale-[1.03]">
-                      <Image
-                        src={service.imageUrl}
-                        alt={service.imageAlt}
-                        fill
-                        sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-                        className="object-cover"
-                        style={{ objectPosition: service.imagePosition ?? "center" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="border-t border-brand-accent pt-5">
-                    <p className="text-sm text-brand-muted mb-2">{service.eyebrow}</p>
-                    <h3 className="text-xl font-medium tracking-tight mb-3">{service.title}</h3>
-                    <p className="text-sm text-brand-muted leading-relaxed">{service.description}</p>
-                  </div>
-                </Link>
-              </AnimatedSection>
-            ))}
           </div>
-
-          <AnimatedSection delay={0.35} className="mt-16 grid grid-cols-1 lg:grid-cols-[0.35fr_1fr] gap-8 lg:gap-16 border-t border-brand-accent pt-10">
-            <div>
-              <h3 className="text-xl font-medium tracking-tight mb-4">Typical deliverables</h3>
-              <Link href="/services" className="inline-flex items-center gap-2 text-sm font-medium text-brand-muted hover:text-brand-text transition-colors group">
-                View service menu <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
-              {featuredDeliverables.map((item) => (
-                <div key={item.title}>
-                  <h4 className="text-base font-medium mb-2">{item.title}</h4>
-                  <p className="text-sm text-brand-muted leading-relaxed">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* About Preview */}
-      <section className="max-w-7xl mx-auto px-6 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <AnimatedSection className="order-2 md:order-1">
-            <StudioPortraits compact />
-          </AnimatedSection>
-          <AnimatedSection className="order-1 md:order-2 flex flex-col gap-8 max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-medium tracking-tight">A focused studio setup for polished product visuals.</h2>
-            <p className="text-lg md:text-xl text-brand-muted leading-relaxed">
-              Creative direction, precise modeling and final render polish come together in one lean visual workflow.
-            </p>
-            <div>
+          <div className="flex sm:flex-row flex-col items-center justify-center gap-4 mt-24">
+            <MagneticButton>
               <Link 
-                href="/about" 
-                className="inline-flex items-center justify-center border border-brand-text bg-transparent text-brand-text px-8 py-4 text-sm font-medium transition-colors hover:bg-brand-text hover:text-brand-bg"
+                href="/contact" 
+                className="inline-flex items-center justify-center rounded-full bg-white text-black px-8 py-5 text-lg font-medium transition-transform hover:scale-[1.02] active:scale-95"
               >
-                Read full bio
+                Schedule a demo
               </Link>
-            </div>
-          </AnimatedSection>
+            </MagneticButton>
+            <MagneticButton strength={0.1}>
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center justify-center rounded-full bg-transparent text-white border border-white/20 hover:bg-white/10 px-8 py-5 text-lg font-medium transition-colors"
+              >
+                Estimate project
+              </Link>
+            </MagneticButton>
+          </div>
+        </AnimatedSection>
+      </section>
+
+      {/* Trusted By Section - Overlapping the Hero via -mt-[5vw] and rounded-t-[5vw] */}
+      <section id="trusted-by-section" className="relative pt-12 pb-16 rounded-t-[3rem] md:rounded-t-[5vw] bg-brand-bg -mt-[3rem] md:-mt-[5vw] z-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <h2 className="text-sm uppercase tracking-widest text-brand-muted font-medium">
+              <span>OUR NEXT-GEN CGI TECH STACK</span>
+            </h2>
+          </div>
+          <div className="mt-12 overflow-hidden -mx-6">
+             <InfiniteMarquee />
+          </div>
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="max-w-4xl mx-auto px-6 w-full text-center">
-        <AnimatedSection className="flex flex-col items-center gap-8 py-20 border-y border-brand-accent">
-          <h2 className="text-3xl md:text-5xl font-medium tracking-tight leading-tight max-w-2xl">
-            Looking for product visuals, renders or flexible 3D support?
-          </h2>
-          <Link 
-            href="/contact" 
-            className="inline-flex items-center justify-center bg-brand-text text-brand-bg px-8 py-4 text-sm font-medium transition-transform hover:scale-[1.02] active:scale-95 mt-4"
-          >
-            Start a conversation
-          </Link>
+      {/* Stacked Sticky Cards Section (Roomsets) */}
+      <section id="roomsets" className="min-h-[50vh] relative z-20 bg-brand-bg">
+        <div className="max-w-7xl mx-auto px-6 py-12 sm:py-24">
+          <AnimatedSection className="text-center mb-24">
+            <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold tracking-tight max-w-4xl mx-auto leading-tight">
+              Tap into the <span className="text-brand-muted italic">power of CG</span> visual experiences that are perfect for your products. Any style, setting, or season.
+            </h2>
+          </AnimatedSection>
+
+          <div className="relative mt-24">
+            {/* Card 1 */}
+            <div className="sticky top-[6rem] pb-24">
+              <div className="rounded-[3rem] bg-brand-bg-alt overflow-clip lg:h-[40rem] shadow-2xl flex flex-col lg:flex-row border border-brand-accent/10">
+                <div className="lg:w-2/5 p-8 sm:p-16 lg:py-24 flex flex-col justify-center">
+                  <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold mb-6 tracking-tight">Tech & Electronics</h3>
+                  <p className="text-lg lg:text-xl font-light text-brand-muted mb-10 leading-relaxed">
+                    Showcase complex consumer electronics with photorealistic precision. Exploded views, glowing LEDs, and macro material details that cameras simply can't capture.
+                  </p>
+                  <Link href="/contact" className="inline-flex w-fit items-center justify-center rounded-full border border-brand-text px-6 py-4 text-base font-medium hover:bg-brand-text hover:text-brand-bg transition-colors">
+                    Schedule a demo
+                  </Link>
+                </div>
+                <div className="lg:flex-1 relative min-h-[300px]">
+                  <Image src={featuredProjects[0]?.thumbnailUrl || "/placeholder.jpg"} alt="Indoor" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="sticky top-[8rem] pb-24">
+              <div className="rounded-[3rem] bg-brand-bg text-brand-text overflow-clip lg:h-[40rem] shadow-2xl flex flex-col lg:flex-row border border-brand-text/10">
+                <div className="lg:w-2/5 p-8 sm:p-16 lg:py-24 flex flex-col justify-center">
+                  <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold mb-6 tracking-tight">Cosmetics & Beauty</h3>
+                  <p className="text-lg lg:text-xl font-light text-brand-muted mb-10 leading-relaxed">
+                    Silky textures, glass reflections, and water splashes. We build luxurious visual campaigns that make beauty products feel premium and tactile.
+                  </p>
+                  <Link href="/contact" className="inline-flex w-fit items-center justify-center rounded-full border border-brand-text px-6 py-4 text-base font-medium hover:bg-brand-text hover:text-brand-bg transition-colors">
+                    Schedule a demo
+                  </Link>
+                </div>
+                <div className="lg:flex-1 relative min-h-[300px]">
+                  <Image src={featuredProjects[1]?.thumbnailUrl || "/placeholder.jpg"} alt="Outdoor" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="sticky top-[10rem] pb-24">
+              <div className="rounded-[3rem] bg-brand-text text-brand-bg overflow-clip lg:h-[40rem] shadow-2xl flex flex-col lg:flex-row border border-brand-bg/20">
+                <div className="lg:w-2/5 p-8 sm:p-16 lg:py-24 flex flex-col justify-center">
+                  <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold mb-6 tracking-tight">Furniture & Interior</h3>
+                  <p className="text-lg lg:text-xl font-light text-brand-bg/80 mb-10 leading-relaxed">
+                    Present sofas, chairs, and lighting in stylish interiors. No photo studios or logistics needed, just flawless CGI styling in any setting.
+                  </p>
+                  <Link href="/contact" className="inline-flex w-fit items-center justify-center rounded-full border border-brand-bg px-6 py-4 text-base font-medium hover:bg-brand-bg hover:text-brand-text transition-colors">
+                    Schedule a demo
+                  </Link>
+                </div>
+                <div className="lg:flex-1 relative min-h-[300px]">
+                  <Image src={featuredProjects[2]?.thumbnailUrl || "/placeholder.jpg"} alt="Lighting" fill className="object-cover" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid Carousel Section */}
+      <section className="py-20 sm:py-32 bg-brand-bg-alt relative z-20 rounded-t-[3rem] md:rounded-t-[5vw] border-t border-brand-accent/20 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 w-full mb-16">
+          <AnimatedSection className="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-16 items-end">
+            <div className="flex gap-3 flex-col-reverse">
+              <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold tracking-tight">
+                Your <span className="text-brand-muted italic">one-stop solution</span> for all your visual needs
+              </h2>
+              <span className="text-sm uppercase tracking-widest text-brand-muted font-medium">Our 3D Render Services</span>
+            </div>
+          </AnimatedSection>
+        </div>
+
+        {/* The sliding card carousel */}
+        <InfiniteCardCarousel />
+        
+        {/* The 8-grid of sub-services for SEO parity */}
+        <div className="mt-16 sm:mt-24 w-full">
+          <SubServicesGrid />
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-brand-bg relative z-20">
+        <AnimatedSection>
+          <div className="text-center mb-12">
+            <h2 className="text-sm uppercase tracking-widest text-brand-muted font-medium">
+              <span>What our clients say</span>
+            </h2>
+          </div>
+          <TestimonialCarousel />
         </AnimatedSection>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 sm:py-32 bg-brand-bg-alt relative z-20 rounded-t-[3rem] md:rounded-t-[5vw] border-t border-brand-accent/20">
+        <div className="max-w-7xl mx-auto px-6 w-full">
+          <AnimatedSection className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold tracking-tight mb-4">
+              Frequently asked <span className="text-brand-muted italic">questions</span>
+            </h2>
+            <p className="text-lg text-brand-muted max-w-2xl mx-auto">
+              Everything you need to know about our 3D rendering process, timelines, and deliverables.
+            </p>
+          </AnimatedSection>
+          
+          <AnimatedSection delay={0.2}>
+            <FAQAccordion />
+          </AnimatedSection>
+        </div>
       </section>
     </div>
   );

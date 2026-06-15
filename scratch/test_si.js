@@ -1,0 +1,11 @@
+const si = require('simple-icons');
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('open')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('blend')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('anthropic')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('midj')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('stab')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('auto')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('chaos')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('vray')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('marm')));
+console.log(Object.keys(si).filter(k => k.toLowerCase().includes('adob')));

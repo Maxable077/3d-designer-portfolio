@@ -1,31 +1,80 @@
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
+const categories = ["All", ...Array.from(new Set(projects.map((p) => p.meta.category)))];
+
 export default function WorkPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredProjects = projects.filter(
+    (project) => activeCategory === "All" || project.meta.category === activeCategory
+  );
+
   return (
-    <div className="max-w-7xl mx-auto px-6 py-20 md:py-32">
-      <AnimatedSection className="mb-20 max-w-2xl">
-        <h1 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 text-brand-text">Work</h1>
-        <p className="text-lg md:text-xl text-brand-muted leading-relaxed">
-          A selection of conceptual projects, visual studies and product presentations.
-        </p>
-      </AnimatedSection>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-        {projects.map((project, index) => (
-          <AnimatedSection key={project.slug} delay={index * 0.1}>
-            <ProjectCard 
-              slug={project.slug}
-              title={project.title}
-              category={project.meta.category}
-              year={project.meta.year}
-              description={project.shortDescription}
-              thumbnailUrl={project.thumbnailUrl}
-            />
+    <div className="flex flex-col w-full bg-brand-bg pb-32">
+      {/* Giant Hero Header */}
+      <section className="w-full bg-brand-bg text-brand-text pt-40 pb-20 md:pt-56 md:pb-32 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
+          <AnimatedSection>
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium tracking-tighter mb-8 uppercase">
+              Portfolio
+            </h1>
+            <p className="text-xl md:text-3xl text-brand-muted max-w-3xl font-light">
+              We create imagery that sells. From concept to photorealism.
+            </p>
           </AnimatedSection>
-        ))}
+        </div>
+      </section>
+
+      {/* Sticky Filter Bar */}
+      <div className="sticky top-20 z-40 bg-brand-bg/90 backdrop-blur-xl border-y border-brand-accent/20">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap gap-4 items-center justify-center md:justify-start">
+          <span className="text-sm uppercase tracking-widest text-brand-muted font-medium mr-4 hidden md:block">Filter by:</span>
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`px-6 py-2 rounded-full border transition-all duration-300 text-sm font-medium uppercase tracking-wider ${
+                activeCategory === category
+                  ? "border-brand-text bg-brand-text text-brand-bg"
+                  : "border-transparent text-brand-muted hover:border-brand-accent hover:text-brand-text"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
       </div>
+
+      {/* Edge-to-Edge Grid */}
+      <motion.div layout className="w-full grid grid-cols-1 md:grid-cols-2">
+        <AnimatePresence>
+          {filteredProjects.map((project) => (
+            <motion.div
+              layout
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.5, ease: [0.21, 0.47, 0.32, 0.98] }}
+              key={project.slug}
+            >
+              <ProjectCard 
+                slug={project.slug}
+                title={project.title}
+                category={project.meta.category}
+                year={project.meta.year}
+                description={project.shortDescription}
+                thumbnailUrl={project.thumbnailUrl}
+              />
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 }

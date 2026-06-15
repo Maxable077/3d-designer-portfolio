@@ -178,10 +178,10 @@ export function StudioChat() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 18, scale: 0.98 }}
             transition={{ type: "spring", stiffness: 320, damping: 28 }}
-            className="fixed inset-x-4 bottom-4 flex max-h-[calc(100svh-2rem)] flex-col overflow-hidden border border-brand-accent bg-brand-bg shadow-2xl shadow-black/15 sm:inset-x-auto sm:right-6 sm:bottom-6 sm:h-[620px] sm:w-[400px]"
+            className="fixed inset-x-4 bottom-4 flex max-h-[calc(100svh-2rem)] flex-col overflow-hidden rounded-2xl border border-brand-accent/70 bg-brand-bg/96 backdrop-blur-xl shadow-[0_28px_70px_rgba(28,28,28,0.12)] sm:inset-x-auto sm:right-6 sm:bottom-6 sm:h-[620px] sm:w-[400px]"
             aria-label="Studio assistant chat"
           >
-            <header className="flex items-start justify-between gap-4 border-b border-brand-accent bg-brand-bg-alt px-5 py-4">
+            <header className="flex items-start justify-between gap-4 border-b border-brand-accent/30 bg-transparent px-5 py-4">
               <div className="min-w-0">
                 <div className="mb-1 flex items-center gap-2 text-sm font-medium text-brand-text">
                   <Sparkles className="h-4 w-4" aria-hidden="true" />
@@ -194,7 +194,7 @@ export function StudioChat() {
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
-                className="grid h-9 w-9 shrink-0 place-items-center border border-brand-accent text-brand-muted transition-colors hover:border-brand-text hover:text-brand-text"
+                className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand-accent/50 text-brand-muted transition-colors hover:border-brand-text hover:text-brand-text"
                 aria-label="Sluit chat"
               >
                 <X className="h-4 w-4" aria-hidden="true" />
@@ -216,10 +216,10 @@ export function StudioChat() {
                   >
                     <div
                       className={cn(
-                        "max-w-[86%] border px-4 py-3 text-sm leading-relaxed",
+                        "max-w-[86%] px-4 py-3 text-sm leading-relaxed rounded-2xl shadow-sm",
                         message.role === "visitor"
-                          ? "border-brand-text bg-brand-text text-brand-bg"
-                          : "border-brand-accent bg-white text-brand-text"
+                          ? "bg-brand-text text-brand-bg rounded-br-sm"
+                          : "border border-brand-accent/50 bg-white text-brand-text rounded-bl-sm"
                       )}
                     >
                       <p>{message.text}</p>
@@ -230,7 +230,7 @@ export function StudioChat() {
                               key={action.href}
                               href={action.href}
                               onClick={() => setIsOpen(false)}
-                              className="inline-flex items-center gap-1 border border-brand-accent bg-brand-bg px-3 py-2 text-xs font-medium text-brand-text transition-colors hover:border-brand-text"
+                              className="inline-flex items-center gap-1 rounded-full border border-brand-accent/50 bg-brand-bg px-3 py-2 text-xs font-medium text-brand-text transition-colors hover:border-brand-text"
                             >
                               <Check className="h-3 w-3" aria-hidden="true" />
                               {action.label}
@@ -245,14 +245,14 @@ export function StudioChat() {
               </div>
             </div>
 
-            <div className="border-t border-brand-accent bg-brand-bg px-4 py-4">
+            <div className="border-t border-brand-accent/30 bg-transparent px-4 py-4">
               <div className="mb-3 flex flex-wrap gap-2">
                 {quickReplies.map((reply) => (
                   <button
                     key={reply}
                     type="button"
                     onClick={() => sendMessage(reply)}
-                    className="border border-brand-accent bg-brand-bg-alt px-3 py-2 text-left text-xs text-brand-text transition-colors hover:border-brand-text"
+                    className="rounded-full border border-brand-accent/50 bg-brand-bg-alt px-3 py-2 text-left text-xs text-brand-text transition-colors hover:border-brand-text"
                   >
                     {reply}
                   </button>
@@ -268,11 +268,11 @@ export function StudioChat() {
                   value={input}
                   onChange={(event) => setInput(event.target.value)}
                   placeholder="Typ je projectvraag..."
-                  className="min-w-0 flex-1 border border-brand-accent bg-white px-4 py-3 text-sm outline-none transition-colors placeholder:text-brand-muted focus:border-brand-text"
+                  className="min-w-0 flex-1 rounded-full border border-brand-accent/50 bg-white px-4 py-3 text-sm outline-none transition-colors placeholder:text-brand-muted focus:border-brand-text"
                 />
                 <button
                   type="submit"
-                  className="grid h-11 w-11 shrink-0 place-items-center bg-brand-text text-brand-bg transition-transform hover:scale-[1.03] active:scale-95"
+                  className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-brand-text text-brand-bg transition-transform hover:scale-[1.03] active:scale-95"
                   aria-label="Verstuur bericht"
                 >
                   <ArrowUp className="h-4 w-4" aria-hidden="true" />
@@ -281,7 +281,7 @@ export function StudioChat() {
 
               <a
                 href={mailHref}
-                className="mt-3 flex items-center justify-center gap-2 border border-brand-accent bg-brand-bg-alt px-4 py-3 text-xs font-medium text-brand-text transition-colors hover:border-brand-text"
+                className="mt-3 flex items-center justify-center gap-2 rounded-full border border-brand-accent/50 bg-brand-bg-alt px-4 py-3 text-xs font-medium text-brand-text transition-colors hover:border-brand-text"
               >
                 <BriefcaseBusiness className="h-4 w-4" aria-hidden="true" />
                 Mail deze briefing naar Max
@@ -296,7 +296,7 @@ export function StudioChat() {
         onClick={() => setIsOpen((currentValue) => !currentValue)}
         whileHover={{ y: -2 }}
         whileTap={{ scale: 0.96 }}
-        className="flex h-14 items-center gap-3 bg-brand-text px-5 text-sm font-medium text-brand-bg shadow-xl shadow-black/15"
+        className="flex h-14 items-center gap-3 rounded-full bg-brand-text px-5 text-sm font-medium text-brand-bg shadow-xl shadow-black/15"
         aria-label="Vraag de studio"
         aria-expanded={isOpen}
         aria-controls="studio-chat-panel"
