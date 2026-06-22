@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StudioChat } from "@/components/StudioChat";
+import { CookieConsent } from "@/components/CookieConsent";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -11,9 +13,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Max — Product Visuals & 3D Design",
+  metadataBase: new URL("https://populique.com"),
+  title: "Populique — Bespoke Product CGI",
   description:
-    "Product renders, 3D visualizations and technical presentations by Max, a Dutch product design student and 3D visualizer.",
+    "Photorealistic 3D rendering, product visualization and motion content for brands that need conversion-driven visuals without physical photoshoots.",
   icons: {
     icon: [{ url: "/populique-app-icon-primary.svg", type: "image/svg+xml" }],
     apple: "/populique-app-icon-primary.svg",
@@ -32,6 +35,8 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <StudioChat />
+        <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );
