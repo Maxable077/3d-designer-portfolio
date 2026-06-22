@@ -146,9 +146,9 @@ export const proofPoints: ProofPoint[] = [
   },
   {
     stat: "05",
-    title: "Portfolio systems online",
+    title: "Case studies across categories",
     description:
-      "The current work already covers appliances, furniture, interiors, lighting and packaging so clients can see the range before a brief starts.",
+      "Our work already covers appliances, furniture, interiors, lighting and packaging so clients can see the range before a brief starts.",
   },
   {
     stat: "3D",

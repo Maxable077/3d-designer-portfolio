@@ -24,7 +24,7 @@ export function InfiniteMarquee() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-               src={`/tech/${item.domain}.svg`} 
+               src={`https://icon.horse/icon/${item.domain}?size=large`} 
                alt={item.name} 
                className="h-full w-full object-contain"
                onError={(e) => {

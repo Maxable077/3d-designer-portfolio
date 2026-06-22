@@ -79,7 +79,7 @@ export const projects: Project[] = [
       {
         id: "animation",
         type: "image-single",
-        images: [{ label: "Animation concept still", aspectRatio: "video", url: "/project-aurora-animation-still.png" }],
+        images: [{ label: "Product animation loop", aspectRatio: "video", url: "/service_animation.png" }],
       }
     ],
   },
@@ -271,7 +271,7 @@ export const projects: Project[] = [
       {
         id: "360",
         type: "image-single",
-        images: [{ label: "360-degree render concept still", aspectRatio: "video", url: "/project-nova-360-still.png" }],
+        images: [{ label: "360-degree product spin", aspectRatio: "video", url: "/service_interactive.png" }],
       }
     ],
   }

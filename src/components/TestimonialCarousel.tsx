@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Max transformed our entire catalog process. We used to spend thousands on physical photoshoots, but the 3D renders are not only cheaper, they actually look better than real photos.",
+    text: "Populique transformed our entire catalog process. We used to spend thousands on physical photoshoots, but the 3D renders are not only cheaper, they actually look better than real photos.",
     author: "Sarah J.",
     role: "Marketing Director, Forma Furniture",
   },
@@ -34,9 +34,9 @@ export function TestimonialCarousel() {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto px-6 py-12">
+    <div className="relative w-full max-w-5xl mx-auto px-6 pb-10 pt-2">
       <div className="flex flex-col items-center text-center">
-        <Quote className="w-12 h-12 text-brand-accent/30 mb-8" />
+        <Quote className="w-10 h-10 text-brand-accent/30 mb-4" />
         
         <div className="relative h-[250px] w-full flex items-center justify-center">
           <AnimatePresence mode="wait">

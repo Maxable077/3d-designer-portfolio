@@ -8,6 +8,8 @@ import { InfiniteCardCarousel } from "@/components/InfiniteCardCarousel";
 import { SubServicesGrid } from "@/components/SubServicesGrid";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { DemoLink } from "@/components/DemoLink";
+import { ESTIMATE_URL } from "@/lib/site";
 import { projects } from "@/data/projects";
 import { serviceFamilies } from "@/data/services";
 
@@ -44,16 +46,15 @@ export default function Home() {
           </div>
           <div className="flex sm:flex-row flex-col items-center justify-center gap-4 mt-24">
             <MagneticButton>
-              <Link 
-                href="/contact" 
+              <DemoLink 
                 className="inline-flex items-center justify-center rounded-full bg-white text-black px-8 py-5 text-lg font-medium transition-transform hover:scale-[1.02] active:scale-95"
               >
                 Schedule a demo
-              </Link>
+              </DemoLink>
             </MagneticButton>
             <MagneticButton strength={0.1}>
               <Link 
-                href="/contact" 
+                href={ESTIMATE_URL}
                 className="inline-flex items-center justify-center rounded-full bg-transparent text-white border border-white/20 hover:bg-white/10 px-8 py-5 text-lg font-medium transition-colors"
               >
                 Estimate project
@@ -95,12 +96,12 @@ export default function Home() {
                   <p className="text-lg lg:text-xl font-light text-brand-muted mb-10 leading-relaxed">
                     Showcase complex consumer electronics with photorealistic precision. Exploded views, glowing LEDs, and macro material details that cameras simply can't capture.
                   </p>
-                  <Link href="/contact" className="inline-flex w-fit items-center justify-center rounded-full border border-brand-text px-6 py-4 text-base font-medium hover:bg-brand-text hover:text-brand-bg transition-colors">
+                  <DemoLink className="inline-flex w-fit items-center justify-center rounded-full border border-brand-text px-6 py-4 text-base font-medium hover:bg-brand-text hover:text-brand-bg transition-colors">
                     Schedule a demo
-                  </Link>
+                  </DemoLink>
                 </div>
                 <div className="lg:flex-1 relative min-h-[300px]">
-                  <Image src={featuredProjects[0]?.thumbnailUrl || "/placeholder.jpg"} alt="Indoor" fill className="object-cover" />
+                  <Image src={featuredProjects[0]?.thumbnailUrl || "/placeholder.jpg"} alt="Tech & Electronics" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -113,12 +114,17 @@ export default function Home() {
                   <p className="text-lg lg:text-xl font-light text-brand-muted mb-10 leading-relaxed">
                     Silky textures, glass reflections, and water splashes. We build luxurious visual campaigns that make beauty products feel premium and tactile.
                   </p>
-                  <Link href="/contact" className="inline-flex w-fit items-center justify-center rounded-full border border-brand-text px-6 py-4 text-base font-medium hover:bg-brand-text hover:text-brand-bg transition-colors">
+                  <DemoLink className="inline-flex w-fit items-center justify-center rounded-full border border-brand-text px-6 py-4 text-base font-medium hover:bg-brand-text hover:text-brand-bg transition-colors">
                     Schedule a demo
-                  </Link>
+                  </DemoLink>
                 </div>
                 <div className="lg:flex-1 relative min-h-[300px]">
-                  <Image src={featuredProjects[1]?.thumbnailUrl || "/placeholder.jpg"} alt="Outdoor" fill className="object-cover" />
+                  <Image
+                    src={projects.find((p) => p.slug === "nova-pack")?.thumbnailUrl || featuredProjects[1]?.thumbnailUrl || "/placeholder.jpg"}
+                    alt="Cosmetics & Beauty"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -127,16 +133,39 @@ export default function Home() {
             <div className="sticky top-[10rem] pb-24">
               <div className="rounded-[3rem] bg-brand-text text-brand-bg overflow-clip lg:h-[40rem] shadow-2xl flex flex-col lg:flex-row border border-brand-bg/20">
                 <div className="lg:w-2/5 p-8 sm:p-16 lg:py-24 flex flex-col justify-center">
-                  <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold mb-6 tracking-tight">Furniture & Interior</h3>
+                  <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold mb-6 tracking-tight">Furniture</h3>
                   <p className="text-lg lg:text-xl font-light text-brand-bg/80 mb-10 leading-relaxed">
                     Present sofas, chairs, and lighting in stylish interiors. No photo studios or logistics needed, just flawless CGI styling in any setting.
                   </p>
-                  <Link href="/contact" className="inline-flex w-fit items-center justify-center rounded-full border border-brand-bg px-6 py-4 text-base font-medium hover:bg-brand-bg hover:text-brand-text transition-colors">
+                  <DemoLink className="inline-flex w-fit items-center justify-center rounded-full border border-brand-bg px-6 py-4 text-base font-medium hover:bg-brand-bg hover:text-brand-text transition-colors">
                     Schedule a demo
-                  </Link>
+                  </DemoLink>
                 </div>
                 <div className="lg:flex-1 relative min-h-[300px]">
-                  <Image src={featuredProjects[2]?.thumbnailUrl || "/placeholder.jpg"} alt="Lighting" fill className="object-cover" />
+                  <Image
+                    src={projects.find((p) => p.slug === "forma-chair")?.thumbnailUrl || "/placeholder.jpg"}
+                    alt="Furniture"
+                    fill
+                    className="object-cover object-[90%_center]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="sticky top-[12rem] pb-24">
+              <div className="rounded-[3rem] bg-brand-text text-brand-bg overflow-clip lg:h-[40rem] shadow-2xl flex flex-col lg:flex-row border border-brand-bg/20">
+                <div className="lg:w-2/5 p-8 sm:p-16 lg:py-24 flex flex-col justify-center">
+                  <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold mb-6 tracking-tight">Interior Design</h3>
+                  <p className="text-lg lg:text-xl font-light text-brand-bg/80 mb-10 leading-relaxed">
+                    Bespoke architectural visualizations with calm proportions, realistic lighting, and premium material direction. Ideal for property developers and interior brands.
+                  </p>
+                  <DemoLink className="inline-flex w-fit items-center justify-center rounded-full border border-brand-bg px-6 py-4 text-base font-medium hover:bg-brand-bg hover:text-brand-text transition-colors">
+                    Schedule a demo
+                  </DemoLink>
+                </div>
+                <div className="lg:flex-1 relative min-h-[300px]">
+                  <Image src={projects.find(p => p.slug === "linea-kitchen")?.thumbnailUrl || "/placeholder.jpg"} alt="Interior Design" fill className="object-cover" />
                 </div>
               </div>
             </div>
@@ -167,9 +196,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-brand-bg relative z-20">
+      <section className="py-16 bg-brand-bg relative z-20">
         <AnimatedSection>
-          <div className="text-center mb-12">
+          <div className="text-center mb-4">
             <h2 className="text-sm uppercase tracking-widest text-brand-muted font-medium">
               <span>What our clients say</span>
             </h2>

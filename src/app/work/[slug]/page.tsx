@@ -1,8 +1,10 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProjectBySlug, projects } from "@/data/projects";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { ProjectAccordion } from "@/components/ProjectAccordion";
+import { createPageMetadata, DEFAULT_OG_IMAGE } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -11,6 +13,26 @@ export function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
+
+  if (!project) {
+    return {};
+  }
+
+  return createPageMetadata({
+    title: `${project.title} — Case Study`,
+    description: project.shortDescription,
+    path: `/work/${project.slug}`,
+    ogImage: project.thumbnailUrl ?? DEFAULT_OG_IMAGE,
+  });
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {

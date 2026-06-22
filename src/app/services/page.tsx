@@ -1,11 +1,20 @@
-import Link from "next/link";
-import { ArrowRight, CheckCircle2, MonitorPlay, Layers, Zap, Ruler } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { MagneticButton } from "@/components/MagneticButton";
+import { PageHero } from "@/components/PageHero";
+import { createPageMetadata } from "@/lib/seo";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2, MonitorPlay, Layers, Zap, Ruler } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { faqs } from "@/data/services";
 import Image from "next/image";
+
+export const metadata = createPageMetadata({
+  title: "Services",
+  description:
+    "Product CGI services — photorealistic 3D modeling, texturing, rendering, animation, and interactive visuals for e-commerce and marketing.",
+  path: "/services",
+});
 
 export default function ServicesPage() {
   const benefits = [
@@ -17,49 +26,52 @@ export default function ServicesPage() {
 
   const coreServices = [
     {
-      title: "Product Silo Renders",
+      title: "3D Modeling & Texturing",
       subtitle: "The Foundation",
-      desc: "Clean, perfectly lit studio shots on pure white or transparent backgrounds. Essential for e-commerce, catalogs, and technical presentations. We ensure consistent lighting across your entire product range.",
-      image: "silo"
+      desc: "We turn your sketches, CAD files, or reference photos into highly optimized, production-ready 3D models. Paired with bespoke material texturing for flawless photorealism.",
+      image: "modeling"
     },
     {
-      title: "Lifestyle Scenes",
-      subtitle: "Context & Emotion",
-      desc: "Fully designed 3D environments that put your product in context. We design the architecture, select the props, and craft the lighting to tell your brand's specific story.",
-      image: "lifestyle"
+      title: "Product Images",
+      subtitle: "Visual Impact",
+      desc: "From clean, perfectly lit white-background silo shots to fully designed, luxurious lifestyle scenes. We craft visuals that highlight craftsmanship and boost engagement.",
+      image: "images"
     },
     {
       title: "Product Animation",
-      subtitle: "Motion & Engagement",
-      desc: "Bring your product to life with smooth 3D motion. From simple 360 turntables to complex exploded views showing internal mechanics, animation captures attention instantly.",
-      image: "animation"
+      subtitle: "Motion & Mechanics",
+      desc: "Bring your furniture and products to life with expert 3D animation. Perfect for showcasing exploded views, mechanical features, or captivating social media campaigns.",
+      video: "animation"
+    },
+    {
+      title: "Interactive Content",
+      subtitle: "Immersive Experiences",
+      desc: "Step into the future with web-ready AR models and 360° interactive product spins. Let your customers explore every angle before they buy.",
+      video: "interactive"
     }
   ];
 
   return (
     <div className="flex flex-col w-full bg-brand-bg">
-      {/* Giant Hero Header */}
-      <section className="w-full bg-brand-text text-brand-bg pt-40 pb-32 md:pt-56 md:pb-48 px-6 relative overflow-hidden rounded-b-[3rem] md:rounded-b-[5vw] z-20">
-        <div className="max-w-7xl mx-auto flex flex-col gap-8 relative z-10">
-          <AnimatedSection>
-            <p className="text-sm md:text-base uppercase tracking-widest font-medium mb-6 opacity-80">3D Render Services</p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter mb-8 max-w-4xl">
-              Visuals that drive <span className="italic opacity-90">impact.</span>
-            </h1>
-            <p className="text-xl md:text-2xl opacity-80 max-w-2xl font-light mb-12">
-              We replace expensive physical photoshoots with scalable, flexible, and photorealistic 3D rendering systems.
-            </p>
-            <MagneticButton>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-brand-bg text-brand-text px-8 py-5 text-lg font-medium transition-transform hover:scale-[1.02] active:scale-95"
-              >
-                Request a quote <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </MagneticButton>
-          </AnimatedSection>
-        </div>
-      </section>
+      <PageHero
+        align="left"
+        eyebrow="3D Render Services"
+        title={
+          <>
+            Visuals that drive <span className="italic opacity-90">impact.</span>
+          </>
+        }
+        description="We replace expensive physical photoshoots with scalable, flexible, and photorealistic 3D rendering systems."
+      >
+        <MagneticButton>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-full bg-brand-bg text-brand-text px-8 py-5 text-lg font-medium transition-transform hover:scale-[1.02] active:scale-95"
+          >
+            Request a quote <ArrowRight className="w-5 h-5 ml-2" />
+          </Link>
+        </MagneticButton>
+      </PageHero>
 
       {/* Benefits Grid */}
       <section className="py-24 md:py-32 px-6 max-w-7xl mx-auto w-full -mt-20 relative z-30">
@@ -104,8 +116,24 @@ export default function ServicesPage() {
               
               {/* Image Side */}
               <div className="flex-1 w-full">
-                <AnimatedSection delay={0.2} className="relative aspect-[4/5] md:aspect-[3/2] lg:aspect-square w-full rounded-2xl overflow-hidden bg-brand-bg-alt">
-                  <ImagePlaceholder label={`Service: ${service.title}`} className="absolute inset-0 w-full h-full" aspectRatio="square" />
+                <AnimatedSection delay={0.2} className="relative aspect-[4/5] md:aspect-[3/2] lg:aspect-square w-full rounded-[2rem] overflow-hidden bg-brand-bg-alt shadow-2xl border border-brand-accent/10">
+                  {service.video ? (
+                    <video
+                      src={`/service_${service.video}.mp4`}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="object-cover w-full h-full transform transition-transform duration-700 hover:scale-105"
+                    />
+                  ) : (
+                    <Image 
+                      src={`/service_${service.image}.png`} 
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  )}
                 </AnimatedSection>
               </div>
             </div>

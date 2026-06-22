@@ -10,21 +10,21 @@ const complexityOptions = [
   {
     id: "simple",
     title: "Simple",
-    image: "/service-lighting-decor-clean.png", // Using a lamp/decor as simple
+    image: "/project-luma-light-v2.png",
     price: 100,
     oldPrice: 130,
   },
   {
     id: "medium",
     title: "Medium",
-    image: "/service-furniture-interiors-clean.png", // Using lounge chair as medium
+    image: "/project-forma-chair-v2.png",
     price: 160,
     oldPrice: 330,
   },
   {
     id: "complex",
     title: "Complex",
-    image: "/service-product-appliances-clean.png", // Using appliance/complex as complex
+    image: "/project-aurora-exploded-view.png",
     price: 380,
     oldPrice: 780,
   },

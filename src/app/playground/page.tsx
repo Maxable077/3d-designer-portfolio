@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2, Sparkles } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { PageHero } from "@/components/PageHero";
 
 export default function Playground() {
   const [prompt, setPrompt] = useState("");
@@ -43,21 +44,19 @@ export default function Playground() {
   };
 
   return (
-    <div className="flex flex-col gap-16 py-20 md:py-32">
-      <section className="max-w-4xl mx-auto px-6 w-full flex flex-col items-center text-center">
-        <AnimatedSection className="flex flex-col items-center gap-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/30 text-brand-text text-sm font-medium mb-4">
-            <Sparkles className="w-4 h-4" /> AI Concept Studio
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-tight">
-            Bring ideas to life in seconds.
-          </h1>
-          <p className="text-lg md:text-xl text-brand-muted max-w-2xl leading-relaxed">
-            Describe a 3D product or concept below. Our integrated Replicate pipeline uses Flux 1.1 Pro to generate a hyper-realistic studio render.
-          </p>
-        </AnimatedSection>
+    <div className="flex flex-col bg-brand-bg w-full min-h-screen pb-20 md:pb-32">
+      <PageHero
+        eyebrow="AI Concept Studio"
+        title={
+          <>
+            Bring ideas to life in <span className="italic opacity-90">seconds.</span>
+          </>
+        }
+        description="Describe a 3D product or concept below. Our pipeline generates hyper-realistic studio renders via Seedream 4.5."
+      />
 
-        <AnimatedSection delay={0.2} className="w-full mt-12">
+      <section className="max-w-4xl mx-auto px-6 w-full -mt-8 relative z-30">
+        <AnimatedSection className="w-full">
           <form onSubmit={handleGenerate} className="flex flex-col sm:flex-row gap-4 w-full max-w-2xl mx-auto">
             <input
               type="text"
@@ -120,7 +119,7 @@ export default function Playground() {
                 className="flex flex-col items-center gap-4 text-brand-text"
               >
                 <Loader2 className="w-8 h-8 animate-spin" />
-                <p className="animate-pulse">Rendering via Replicate...</p>
+                "Rendering image..."
               </motion.div>
             )}
 

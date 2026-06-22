@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import {
+  INSTAGRAM_URL,
+  LINKEDIN_COMPANY_URL,
+  LINKEDIN_PERSONAL_URL,
+} from "@/lib/site";
 import { MagneticButton } from "./MagneticButton";
 
 export function Footer() {
@@ -53,14 +58,16 @@ export function Footer() {
           <div className="flex flex-col gap-6">
             <h3 className="text-sm text-brand-muted uppercase tracking-widest font-medium">Socials</h3>
             <div className="flex flex-col gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg hover:text-brand-accent transition-colors w-fit">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg hover:text-brand-accent transition-colors w-fit">
                 Instagram
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg hover:text-brand-accent transition-colors w-fit">
+              <a
+                href={LINKEDIN_COMPANY_URL ?? LINKEDIN_PERSONAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-lg hover:text-brand-accent transition-colors w-fit"
+              >
                 LinkedIn
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg hover:text-brand-accent transition-colors w-fit">
-                Twitter
               </a>
             </div>
           </div>
@@ -68,7 +75,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-brand-muted">
-          <div>&copy; {new Date().getFullYear()} Max. All rights reserved.</div>
+          <div>&copy; {new Date().getFullYear()} Populique. All rights reserved.</div>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-brand-text transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-brand-text transition-colors">Terms of Service</Link>

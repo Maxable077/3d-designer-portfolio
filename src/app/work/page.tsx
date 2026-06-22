@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { PageHero } from "@/components/PageHero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
@@ -17,19 +18,11 @@ export default function WorkPage() {
 
   return (
     <div className="flex flex-col w-full bg-brand-bg pb-32">
-      {/* Giant Hero Header */}
-      <section className="w-full bg-brand-bg text-brand-text pt-40 pb-20 md:pt-56 md:pb-32 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-          <AnimatedSection>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium tracking-tighter mb-8 uppercase">
-              Portfolio
-            </h1>
-            <p className="text-xl md:text-3xl text-brand-muted max-w-3xl font-light">
-              We create imagery that sells. From concept to photorealism.
-            </p>
-          </AnimatedSection>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Portfolio"
+        title="Case studies"
+        description="Selected work across product, interior and packaging — proof of what we deliver for clients."
+      />
 
       {/* Sticky Filter Bar */}
       <div className="sticky top-20 z-40 bg-brand-bg/90 backdrop-blur-xl border-y border-brand-accent/20">

@@ -173,15 +173,15 @@ export function Navbar() {
             onMouseEnter={() => setActiveMenu("services")}
           >
             <div className="mx-auto grid max-w-7xl grid-cols-[1fr_0.34fr] gap-8 px-6 py-8">
-              <div className="grid grid-cols-4 gap-6">
+              <div className="grid grid-cols-4 items-stretch gap-6">
                 {serviceFamilies.map((service) => (
                   <Link
                     key={service.title}
                     href="/services"
                     onClick={() => setActiveMenu(null)}
-                    className="group block border border-brand-accent/30 bg-brand-bg-alt rounded-2xl overflow-hidden hover:border-brand-text transition-colors"
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-brand-accent/30 bg-brand-bg transition-colors hover:border-brand-accent"
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden border-b border-brand-accent/30">
+                    <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-brand-bg-alt">
                       <Image
                         src={service.imageUrl}
                         alt={service.imageAlt}
@@ -191,9 +191,9 @@ export function Navbar() {
                         style={{ objectPosition: service.imagePosition ?? "center" }}
                       />
                     </div>
-                    <div className="p-5 bg-brand-bg">
-                      <p className="mb-2 text-xs text-brand-muted uppercase tracking-widest font-medium">{service.eyebrow}</p>
-                      <h3 className="mb-2 text-lg font-medium tracking-tight text-brand-text">{service.title}</h3>
+                    <div className="flex min-h-[5.5rem] flex-1 flex-col justify-end border-t border-brand-accent/30 p-5">
+                      <p className="mb-2 text-xs font-medium uppercase tracking-widest text-brand-muted">{service.eyebrow}</p>
+                      <h3 className="text-lg font-medium leading-snug tracking-tight text-brand-text">{service.title}</h3>
                     </div>
                   </Link>
                 ))}
@@ -309,7 +309,7 @@ export function Navbar() {
                     onClick={() => setActiveMenu(null)}
                     className="inline-flex items-center gap-2 bg-brand-text px-6 py-3 rounded-full text-sm font-medium text-brand-bg transition-transform hover:scale-[1.02] active:scale-95"
                   >
-                    View full portfolio <ArrowRight className="h-4 w-4" />
+                    View all case studies <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
               </div>

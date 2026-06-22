@@ -2,9 +2,17 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { StudioPortraits } from "@/components/StudioPortraits";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { MagneticButton } from "@/components/MagneticButton";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import { PageHero } from "@/components/PageHero";
+import { createPageMetadata } from "@/lib/seo";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+
+export const metadata = createPageMetadata({
+  title: "About",
+  description:
+    "Populique is a boutique 3D studio focused on photorealistic product CGI, visualization, and motion for brands that need launch-ready visuals.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   const stats = [
@@ -35,23 +43,15 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col bg-brand-bg">
-      {/* Immersive Studio Hero */}
-      <section className="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-brand-bg/80 z-10" /> {/* Dark overlay over hero */}
-        <div className="absolute inset-0 z-0">
-           <ImagePlaceholder label="Studio / Behind the scenes" className="w-full h-full object-cover" aspectRatio="landscape" />
-        </div>
-        <div className="relative z-20 text-center px-6 max-w-4xl flex flex-col items-center">
-          <AnimatedSection>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter mb-6">
-              We build visual <span className="italic">worlds.</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-brand-muted font-light max-w-2xl mx-auto">
-              A boutique 3D visualization studio specializing in high-end product rendering and motion.
-            </p>
-          </AnimatedSection>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="About us"
+        title={
+          <>
+            We build visual <span className="italic opacity-90">worlds.</span>
+          </>
+        }
+        description="A boutique 3D visualization studio specializing in high-end product rendering and motion."
+      />
 
       {/* About the studio (Text + Portraits) */}
       <section className="py-24 md:py-32 px-6 max-w-7xl mx-auto w-full">
@@ -63,10 +63,10 @@ export default function AboutPage() {
             </h2>
             <div className="flex flex-col gap-6 text-lg text-brand-muted leading-relaxed font-light">
               <p>
-                I am Max, a product design student and 3D visualizer based in the Netherlands. The studio is built around a clear visual workflow: direction, precision modeling, and render polish.
+                Populique is a boutique 3D visualization studio based in the Netherlands. We help brands replace expensive photoshoots with scalable, photorealistic CGI — from first concept to final delivery.
               </p>
               <p>
-                Specializing in Blender and Fusion 360, I translate ideas, sketches, and CAD models into polished visuals. Whether it's a lighting concept, modern furniture, or a technical packaging system, I strive to make every render feel tactile, intentional, and premium.
+                Our team combines product design judgement with render craft in Blender, Fusion 360 and industry-standard lighting pipelines. Whether it is a lighting concept, modern furniture piece or technical packaging system, every visual is built to feel tactile, intentional and premium.
               </p>
             </div>
             <div className="mt-4">

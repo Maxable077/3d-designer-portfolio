@@ -12,6 +12,7 @@ import {
   X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { mailtoHref } from "@/lib/site";
 
 type ChatAction = {
   label: string;
@@ -29,7 +30,7 @@ const starterMessages: ChatMessage[] = [
   {
     id: "welcome",
     role: "assistant",
-    text: "Hi, ik ben de studio assistant. Ik kan je helpen het juiste werk te vinden, een 3D project scherp te krijgen of snel een briefing klaar te zetten.",
+    text: "Hi, ik ben de Populique studio assistant. Ik kan je helpen relevante case studies te vinden, een 3D project scherp te krijgen of snel een briefing klaar te zetten.",
   },
 ];
 
@@ -71,7 +72,7 @@ function createAssistantReply(input: string): ChatMessage {
       role: "assistant",
       text: "Als je product renders zoekt, start bij Aurora Espresso. Voor interieur en meubels past Forma Chair of Linea Kitchen beter. Voor licht, glas en sfeer is Luma Light het meest relevant.",
       actions: [
-        { label: "Alle projecten", href: "/work" },
+        { label: "Alle case studies", href: "/work" },
         { label: "Product renders", href: "/work/aurora-espresso" },
       ],
     };
@@ -100,7 +101,7 @@ function createAssistantReply(input: string): ChatMessage {
     return {
       id: crypto.randomUUID(),
       role: "assistant",
-      text: "Voor beschikbaarheid, timing en prijs is het slim om kort de scope te sturen: aantal beelden, gewenste stijl, deadline en inputmateriaal. Dan kan Max gericht reageren zonder eindeloze mailpingpong.",
+      text: "Voor beschikbaarheid, timing en prijs is het slim om kort de scope te sturen: aantal beelden, gewenste stijl, deadline en inputmateriaal. Dan kan het Populique-team gericht reageren zonder eindeloze mailpingpong.",
       actions: [{ label: "Stuur aanvraag", href: "/contact" }],
     };
   }
@@ -129,13 +130,12 @@ export function StudioChat() {
   );
 
   const mailHref = useMemo(() => {
-    const body = visitorBrief
-      ? `Hi Max,\n\nIk kwam via je portfolio chat. Dit is mijn eerste projectinfo:\n\n${visitorBrief}\n\nGroet,`
-      : "Hi Max,\n\nIk wil graag een 3D project bespreken.\n\nGroet,";
-
-    return `mailto:hello@example.com?subject=${encodeURIComponent(
-      "3D project aanvraag"
-    )}&body=${encodeURIComponent(body)}`;
+    return mailtoHref(
+      "3D project aanvraag",
+      visitorBrief
+        ? `Hi Populique,\n\nIk kwam via jullie website chat. Dit is mijn eerste projectinfo:\n\n${visitorBrief}\n\nGroet,`
+        : "Hi Populique,\n\nIk wil graag een 3D project bespreken.\n\nGroet,"
+    );
   }, [visitorBrief]);
 
   useEffect(() => {
@@ -188,7 +188,7 @@ export function StudioChat() {
                   Studio Assistant
                 </div>
                 <p className="text-xs leading-relaxed text-brand-muted">
-                  Snelle hulp voor portfolio, briefing en beschikbaarheid.
+                  Snelle hulp voor case studies, briefing en beschikbaarheid.
                 </p>
               </div>
               <button
@@ -284,7 +284,7 @@ export function StudioChat() {
                 className="mt-3 flex items-center justify-center gap-2 rounded-full border border-brand-accent/50 bg-brand-bg-alt px-4 py-3 text-xs font-medium text-brand-text transition-colors hover:border-brand-text"
               >
                 <BriefcaseBusiness className="h-4 w-4" aria-hidden="true" />
-                Mail deze briefing naar Max
+                Mail deze briefing naar Populique
               </a>
             </div>
           </motion.section>

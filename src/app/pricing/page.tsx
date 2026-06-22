@@ -1,28 +1,31 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { PageHero } from "@/components/PageHero";
 import { PricingCalculator } from "@/components/PricingCalculator";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Pricing",
+  description:
+    "Transparent product CGI pricing — configure your render package and get a ballpark estimate for stills, animation, and PDP-ready visuals.",
+  path: "/pricing",
+});
 
 export default function PricingPage() {
   return (
-    <div className="flex flex-col bg-brand-bg text-brand-text min-h-screen pt-32 pb-24">
-      {/* Header */}
-      <section className="px-6 max-w-7xl mx-auto w-full mb-16 md:mb-24">
-        <AnimatedSection className="max-w-3xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-brand-muted mb-6">
-            Simple Pricing Of 3D Content For E-Commerce
-          </p>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
-            Create your <span className="text-brand-muted italic">product detail page</span>
-          </h1>
-          <p className="text-lg md:text-xl text-brand-muted leading-relaxed">
-            Estimate your 3D rendering project in minutes. Select model complexity,
-            lifestyle settings, and optional AR. Get a full pricing breakdown — fast and transparent.
-          </p>
-        </AnimatedSection>
-      </section>
+    <div className="flex flex-col bg-brand-bg text-brand-text min-h-screen pb-24">
+      <PageHero
+        eyebrow="Pricing"
+        title={
+          <>
+            Create your <span className="italic opacity-90">product detail page</span>
+          </>
+        }
+        description="Estimate your 3D rendering project in minutes. Select model complexity, lifestyle settings, and optional AR. Get a full pricing breakdown — fast and transparent."
+      />
 
       {/* The Calculator Module */}
-      <section className="px-6 w-full max-w-[1400px] mx-auto mb-32">
+      <section className="px-6 w-full max-w-[1400px] mx-auto mb-32 pt-10 md:pt-16 relative z-30">
         <AnimatedSection delay={0.2} className="bg-brand-bg-alt/50 border border-brand-accent/20 rounded-[3rem] p-6 md:p-16 w-full shadow-2xl">
           <PricingCalculator />
         </AnimatedSection>

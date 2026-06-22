@@ -32,8 +32,8 @@ export function CookieConsent() {
         >
           <div className="rounded-2xl border border-brand-accent/60 bg-brand-bg/95 p-5 shadow-[0_20px_50px_rgba(28,28,28,0.12)] backdrop-blur-xl">
             <p className="text-sm leading-relaxed text-brand-muted">
-              We use essential cookies to keep the site secure and working. Optional analytics may be added later — you
-              can read how we handle data in our{" "}
+              We use essential cookies to keep the site secure and working. With your consent we also use Vercel
+              Analytics to understand how visitors use the site — read how we handle data in our{" "}
               <Link href="/privacy" className="text-brand-text underline underline-offset-4 hover:opacity-70">
                 Privacy Policy
               </Link>

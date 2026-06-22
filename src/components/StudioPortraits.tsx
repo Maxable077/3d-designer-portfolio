@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const portraits = [
   {
-    name: "Max",
+    name: "Creative Lead",
     role: "Owner / Creative Lead",
     note: "Direction, concept and client contact",
     src: "/team-owner-silhouette.png",

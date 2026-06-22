@@ -6,6 +6,8 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { StudioChat } from "@/components/StudioChat";
 import { CookieConsent } from "@/components/CookieConsent";
+import { OrganizationJsonLd } from "@/components/OrganizationJsonLd";
+import { createPageMetadata } from "@/lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,9 +16,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://populique.com"),
-  title: "Populique — Bespoke Product CGI",
-  description:
-    "Photorealistic 3D rendering, product visualization and motion content for brands that need conversion-driven visuals without physical photoshoots.",
+  ...createPageMetadata({
+    title: "Populique — Bespoke Product CGI",
+    path: "/",
+  }),
   verification: {
     google: "TfGWVAjnZf-uJRp8ydPzGQMJ4iJw8IFL1Jf36lScRQ8",
   },
@@ -34,6 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <body className="min-h-full flex flex-col bg-brand-bg text-brand-text antialiased">
+        <OrganizationJsonLd />
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

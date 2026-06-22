@@ -1,59 +1,74 @@
 import { NextResponse } from "next/server";
-import Replicate from "replicate";
 
-// Initialize Replicate API client
-// It automatically uses process.env.REPLICATE_API_TOKEN
-const replicate = new Replicate();
+const PRO_MODEL = "bytedance-seed/seedream-4.5";
+const DRAFT_MODEL = "black-forest-labs/flux.2-klein-4b";
+
+const STUDIO_PROMPT_PREFIX =
+  "3d product render, cinematic lighting, photorealistic, highly detailed, octane render, unreal engine 5, professional studio photography, ";
 
 export async function POST(req: Request) {
   try {
-    const { prompt } = await req.json();
+    const { prompt, draft } = await req.json();
 
-    if (!prompt) {
-      return NextResponse.json(
-        { error: "Prompt is required" },
-        { status: 400 }
-      );
+    if (!prompt || typeof prompt !== "string") {
+      return NextResponse.json({ error: "Prompt is required" }, { status: 400 });
     }
 
-    if (!process.env.REPLICATE_API_TOKEN) {
+    const apiKey = process.env.OPENROUTER_API_KEY;
+    if (!apiKey) {
       return NextResponse.json(
-        { error: "Replicate API token is not configured in .env.local" },
+        { error: "OPENROUTER_API_KEY is not configured in .env.local" },
         { status: 500 }
       );
     }
 
-    // Run the hyper-realistic FLUX 1.1 Pro model
-    const output = await replicate.run(
-      "black-forest-labs/flux-1.1-pro",
-      {
-        input: {
-          prompt: `3d product render, ${prompt}, cinematic lighting, photorealistic, 8k resolution, highly detailed, octane render, unreal engine 5, professional studio photography`,
-          aspect_ratio: "16:9",
-          output_format: "webp",
-          output_quality: 90,
-        }
-      }
-    );
+    const model = draft ? DRAFT_MODEL : PRO_MODEL;
 
-    // FLUX 1.1 Pro usually returns a single URL string or a stream.
-    // If it's a stream, we can't easily JSON it, but replicate.run usually resolves to the final output.
-    
-    let imageUrl = output;
-    
-    // Sometimes it's wrapped in an array
-    if (Array.isArray(output)) {
-      imageUrl = output[0];
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+        "HTTP-Referer": "https://populique.com",
+        "X-Title": "Populique",
+      },
+      body: JSON.stringify({
+        model,
+        messages: [
+          {
+            role: "user",
+            content: `${STUDIO_PROMPT_PREFIX}${prompt}`,
+          },
+        ],
+        modalities: ["image"],
+      }),
+    });
+
+    if (!response.ok) {
+      const detail = await response.text();
+      return NextResponse.json(
+        { error: `OpenRouter error (${response.status}): ${detail}` },
+        { status: 502 }
+      );
     }
 
-    return NextResponse.json({ imageUrl });
+    const data = await response.json();
+    const images = data.choices?.[0]?.message?.images;
 
+    if (!images?.[0]?.image_url?.url) {
+      return NextResponse.json(
+        { error: "No image returned from OpenRouter" },
+        { status: 502 }
+      );
+    }
+
+    return NextResponse.json({
+      imageUrl: images[0].image_url.url,
+      model,
+    });
   } catch (error: unknown) {
-    console.error("Replicate API Error:", error);
+    console.error("OpenRouter API Error:", error);
     const message = error instanceof Error ? error.message : "Something went wrong";
-    return NextResponse.json(
-      { error: message },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
