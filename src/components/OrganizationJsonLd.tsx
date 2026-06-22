@@ -1,10 +1,6 @@
-import { organizationJsonLd } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 export function OrganizationJsonLd() {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
-    />
-  );
+  return <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />;
 }

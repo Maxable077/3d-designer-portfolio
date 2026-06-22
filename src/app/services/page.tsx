@@ -1,7 +1,8 @@
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { MagneticButton } from "@/components/MagneticButton";
 import { PageHero } from "@/components/PageHero";
-import { createPageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { createPageMetadata, faqPageJsonLd, PAGE_SEO } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MonitorPlay, Layers, Zap, Ruler } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
@@ -10,9 +11,8 @@ import { faqs } from "@/data/services";
 import Image from "next/image";
 
 export const metadata = createPageMetadata({
-  title: "Services",
-  description:
-    "Product CGI services — photorealistic 3D modeling, texturing, rendering, animation, and interactive visuals for e-commerce and marketing.",
+  title: PAGE_SEO.services.title,
+  description: PAGE_SEO.services.description,
   path: "/services",
 });
 
@@ -52,6 +52,8 @@ export default function ServicesPage() {
   ];
 
   return (
+    <>
+      <JsonLd data={faqPageJsonLd(faqs)} />
     <div className="flex flex-col w-full bg-brand-bg">
       <PageHero
         align="left"
@@ -179,5 +181,6 @@ export default function ServicesPage() {
       </section>
 
     </div>
+    </>
   );
 }

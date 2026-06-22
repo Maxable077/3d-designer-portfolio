@@ -2,12 +2,11 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { PageHero } from "@/components/PageHero";
 import { PricingCalculator } from "@/components/PricingCalculator";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Pricing",
-  description:
-    "Transparent product CGI pricing — configure your render package and get a ballpark estimate for stills, animation, and PDP-ready visuals.",
+  title: PAGE_SEO.pricing.title,
+  description: PAGE_SEO.pricing.description,
   path: "/pricing",
 });
 

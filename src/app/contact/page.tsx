@@ -4,7 +4,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContactFormSection } from "@/components/ContactFormSection";
 import { PageHero } from "@/components/PageHero";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 import {
   CONTACT_EMAIL,
   INSTAGRAM_URL,
@@ -14,9 +14,8 @@ import {
 import { Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact",
-  description:
-    "Start a product CGI project with Populique — request a quote, book a demo, or ask about photorealistic 3D renders and animation.",
+  title: PAGE_SEO.contact.title,
+  description: PAGE_SEO.contact.description,
   path: "/contact",
 });
 

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { LegalPageShell } from "@/components/LegalPageShell";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Privacy Policy",
-  description:
-    "How Populique collects, uses, and protects personal data when you visit our website or request 3D visualization services.",
+  title: PAGE_SEO.privacy.title,
+  description: PAGE_SEO.privacy.description,
   path: "/privacy",
 });
 

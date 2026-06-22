@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { LegalPageShell } from "@/components/LegalPageShell";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Terms of Service",
-  description:
-    "Terms and conditions governing use of the Populique website and our 3D visualization and product CGI services.",
+  title: PAGE_SEO.terms.title,
+  description: PAGE_SEO.terms.description,
   path: "/terms",
 });
 

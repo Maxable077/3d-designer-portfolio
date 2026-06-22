@@ -4,7 +4,8 @@ import { getProjectBySlug, projects } from "@/data/projects";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { ProjectAccordion } from "@/components/ProjectAccordion";
-import { createPageMetadata, DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { createPageMetadata, DEFAULT_OG_IMAGE, projectPageSeo, projectStructuredData } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -27,9 +28,11 @@ export async function generateMetadata({
     return {};
   }
 
+  const seo = projectPageSeo(project);
+
   return createPageMetadata({
-    title: `${project.title} — Case Study`,
-    description: project.shortDescription,
+    title: seo.title,
+    description: seo.description,
     path: `/work/${project.slug}`,
     ogImage: project.thumbnailUrl ?? DEFAULT_OG_IMAGE,
   });
@@ -67,6 +70,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const heroImageUrl = firstImageSection?.images?.[0]?.url;
 
   return (
+    <>
+      <JsonLd data={projectStructuredData(project)} />
     <div className="bg-brand-bg-alt min-h-screen">
       {/* Edge-to-Edge Hero Header with Parallax Feel */}
       <header className="relative w-full h-[80vh] md:h-[90vh] flex items-end pb-24 md:pb-32 px-6 overflow-hidden">
@@ -197,5 +202,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </AnimatedSection>
       </section>
     </div>
+    </>
   );
 }

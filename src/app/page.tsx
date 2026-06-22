@@ -10,8 +10,15 @@ import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { DemoLink } from "@/components/DemoLink";
 import { ESTIMATE_URL } from "@/lib/site";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 import { projects } from "@/data/projects";
 import { serviceFamilies } from "@/data/services";
+
+export const metadata = createPageMetadata({
+  title: PAGE_SEO.home.title,
+  description: PAGE_SEO.home.description,
+  path: "/",
+});
 
 export default function Home() {
   const featuredProjects = projects.slice(0, 3);

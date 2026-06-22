@@ -3,14 +3,13 @@ import { StudioPortraits } from "@/components/StudioPortraits";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { MagneticButton } from "@/components/MagneticButton";
 import { PageHero } from "@/components/PageHero";
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata = createPageMetadata({
-  title: "About",
-  description:
-    "Populique is a boutique 3D studio focused on photorealistic product CGI, visualization, and motion for brands that need launch-ready visuals.",
+  title: PAGE_SEO.about.title,
+  description: PAGE_SEO.about.description,
   path: "/about",
 });
 

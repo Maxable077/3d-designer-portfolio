@@ -1,9 +1,8 @@
-import { createPageMetadata } from "@/lib/seo";
+import { createPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "Work",
-  description:
-    "Case studies in photorealistic product CGI — espresso machines, furniture, lighting, and packaging visuals built for e-commerce and launch campaigns.",
+  title: PAGE_SEO.work.title,
+  description: PAGE_SEO.work.description,
   path: "/work",
 });
 

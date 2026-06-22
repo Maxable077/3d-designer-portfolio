@@ -7,7 +7,7 @@ import { Footer } from "@/components/Footer";
 import { StudioChat } from "@/components/StudioChat";
 import { CookieConsent } from "@/components/CookieConsent";
 import { OrganizationJsonLd } from "@/components/OrganizationJsonLd";
-import { createPageMetadata } from "@/lib/seo";
+import { bingVerificationMetadata, createPageMetadata, PAGE_SEO } from "@/lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,11 +17,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://populique.com"),
   ...createPageMetadata({
-    title: "Populique — Bespoke Product CGI",
+    title: PAGE_SEO.home.title,
+    description: PAGE_SEO.home.description,
     path: "/",
   }),
   verification: {
     google: "TfGWVAjnZf-uJRp8ydPzGQMJ4iJw8IFL1Jf36lScRQ8",
+    ...bingVerificationMetadata(),
   },
   icons: {
     icon: [{ url: "/populique-app-icon-primary.svg", type: "image/svg+xml" }],
