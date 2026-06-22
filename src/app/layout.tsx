@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Populique — Bespoke Product CGI",
   description:
     "Photorealistic 3D rendering, product visualization and motion content for brands that need conversion-driven visuals without physical photoshoots.",
+  verification: {
+    google: "TfGWVAjnZf-uJRp8ydPzGQMJ4iJw8IFL1Jf36lScRQ8",
+  },
   icons: {
     icon: [{ url: "/populique-app-icon-primary.svg", type: "image/svg+xml" }],
     apple: "/populique-app-icon-primary.svg",
