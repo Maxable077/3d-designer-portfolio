@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "Max — Product Visuals & 3D Design",
   description:
     "Product renders, 3D visualizations and technical presentations by Max, a Dutch product design student and 3D visualizer.",
+  icons: {
+    icon: [{ url: "/populique-app-icon-primary.svg", type: "image/svg+xml" }],
+    apple: "/populique-app-icon-primary.svg",
+  },
 };
 
 export default function RootLayout({
